@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Catalog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('./blocks/header.html')
+    <div class="nav">
+        <h1 class="nav__title">Category products</h1>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
+            <li class="nav__item current">Catalog</li>
+        </ul>
+    </div>
+    <section class="catalog">
+        <ul class="catalog__upperlist">
+            <li class="catalog__item catalog__apparel">
+                <a class="catalog__link" href="#">APPAREL KIDS</a>
+                <img class="catalog__img" src="./img/category/sweater.png" width="244" height="177"
+                    alt="images of apparel kids category">
+            </li>
+            <li class="catalog__item catalog__holiday">
+                <a class="catalog__link " href="#">HOLIDAY SHOP</a>
+                <img class="catalog__img" src="./img/category/soxs.png" width="208" height="244"
+                    alt="images of apparel kids category">
+            </li>
+            <li class="catalog__item catalog__toys">
+                <a class="catalog__link" href="./toys.html">TOYS</a>
+                <img class="catalog__img" src="./img/category/deer.png" width="270" height="270"
+                    alt="images of apparel kids category">
+            </li>
+        </ul>
+        <ul class="catalog__lowerlist">
+            <li class="catalog__item catalog__accesories">
+                <a class="catalog__link" href="#">ACCESSORIES</a>
+                <img class="catalog__img" src="./img/category/eti.png" width="240" height="250"
+                    alt="images of apparel kids category">
+            </li>
+            <li class="catalog__item catalog__sale">
+                <a class="catalog__link" href="#">SALE</a>
+                <img class="catalog__img" src="./img/category/flamingo.png" width="248" height="248"
+                    alt="images of apparel kids category">
+            </li>
+            <li class="catalog__item catalog__adults">
+                <a class="catalog__link" href="#">APPAREL ADULTS</a>
+                <img class="catalog__img" src="./img/category/shirt.png" width="272" height="204"
+                    alt="images of apparel kids category">
+            </li>
+        </ul>
+        <div class="catalog__textblock">
+            <h2 class="catalog__title">Product Description</h2>
+            <div class="catalog__discription-owerflow">
+                <p class="catalog__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and
+                    almost
+                    really cry. You can even bathe her, just like a little sister.</p>
+                <p class="catalog__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand
+                        upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="catalog__text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle
+                            for
+                            water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll,
+                            the
+                            other for her young mistress.</p>
+            </div>
+        </div>
+    </section>
+    @@include('./blocks/footer.html')
+    <script src="/js/raitingmin.js"></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Contact us</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+  @@include('./blocks/header.html')
+  <div class="nav">
+      <h1 class="nav__title">CONTACT US</h1>
+      <nav class="nav__crumbs">
+          <ol class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
+              <li class="nav__item current">Contact Us</li>
+          </ol>
+      </nav>
+  </div>
+  <div class="section">
+      <form class="section__form" action="#">
+          <div class="section__container-name wrapper">
+              <label class="section__label" for="Name">Name</label>
+              <input class="section__input section__name" type="text" id="Name" placeholder="Ivan Ivanov">
+          </div>
+          <div class="section__container-data wrapper">
+              <div class="section__container-tel">
+                  <label class="section__label" for="Telephone">Phone</label>
+                  <input class="section__input section__telephone" type="tel" id="Telephone">
+              </div>
+              <div class="section__container-email">
+                  <label class="section__label" for="Email">Email</label>
+                  <input class="section__input section__email" type="text" id="Email">
+              </div>
+          </div>
+          <div class="section__container-message wrapper">
+              <label class="section__label" for="Message">Message</label>
+              <!-- <input class="section__input section__message" type="text" id="Message"> -->
+              <textarea class="section__textaria" name="#" id="Message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="section__container-description wrapper">
+              <input class="section__input-checkbox" type="checkbox" id="checkbox">
+              <span class="section__span"></span>
+              <label class="section__label section__description-label" for="checkbox">By clicking on the button, you
+                  consent to the processing of
+                  your personal data</label>
+          </div>
+          <button class="section__btn" type="submit">Submit</button>
+      </form>
+      <div class="section__description">
+          <ul class="section__list">
+              <li class="section__item">Our support team are on-hand to assist with any issues you are experiencing.
+              </li>
+              <li class="section__item">Please use the form to contact us with your needs. Send us a message and we'll
+                  respond as soon as possible.</li>
+              <li class="section__item section__item-shout">An expert is waiting to help you!</li>
+          </ul>
+      </div>
+  </div>
+  @@include('./blocks/footer.html')
+  <script src="/js/raitingmin.js"></script>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

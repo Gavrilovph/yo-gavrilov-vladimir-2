@@ -1,0 +1,199 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #7c96dacc;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.modal.open .modal__content {
+    transform: perspective(600) translate(0px, 0%) rotate(0deg);
+    opacity: 1;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.modal__content {
+    max-width: 680px;
+    background-color: #E5EAF8;
+    position: relative;
+}
+
+/* closer cross */
+
+.modal__close {
+    position: absolute;
+    margin-right: -25px;
+    margin-top: -190px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/closemodal.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.modal__close:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.modal__close:active {
+    opacity: 40%;
+}
+
+.section__form {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5EAF8;
+    padding: 42px 40px;
+    gap: 20px;
+    margin-top: -191px;
+}
+
+.section__label {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+
+.section__container-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__container-name,
+.section__container-tel,
+.section__container-email,
+.section__container-message {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.section__btn {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: fit-content;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+.section__btn:hover {
+    background-color: #C29974;
+}
+
+.section__btn:active {
+    background-color: #CFAF91;
+}
+
+.section__btn:disabled {
+    background-color: #C1C1C1;
+}
+
+.section__container-tel,
+.section__container-email {
+    width: 100%;
+}
+
+.section__container-email {
+    margin-left: 20px;
+}
+
+.section__input {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.section__name,
+.section__telephone,
+.section__email {
+    height: 50px;
+}
+
+.section__message {
+    height: 150px;
+    width: 600px;
+}
+
+.section__name {
+    padding-left: 20px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.section__container-description {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.section__input-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.section__span {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url(../img/contactUS/checkbox.svg);
+}
+
+.section__description-label {
+    margin-left: 35px;
+    margin-top: 2px;
+}
+
+.section__input-checkbox:hover~.section__description-label {
+    text-decoration: underline;
+}
+
+.section__input-checkbox:checked+.section__span {
+    background-image: url(../img/contactUS/checkboxchecked.svg);
+}
+
+.section__input-checkbox:disabled+.section__span {
+    background-image: url(../img/contactUS/checkdisabled.svg);
+}
+
+.section__input-checkbox:disabled~.section__description-label {
+    color: #908484;
+}

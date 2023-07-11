@@ -1,0 +1,1 @@
+let openModalbtn=document.querySelector(".modal__btn"),openModalWindow=document.querySelector(".modal"),hideModalBtn=document.querySelector(".modal__close");openModalbtn.addEventListener("click",()=>{openModalWindow.classList.add("open")}),hideModalBtn.addEventListener("click",()=>{openModalWindow.classList.remove("open")});
