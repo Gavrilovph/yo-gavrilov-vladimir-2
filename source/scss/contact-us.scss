@@ -2,12 +2,8 @@
     max-width: 1178px;
     margin: auto;
     display: flex;
-    gap: 120px;
+    gap: 122px;
     margin-bottom: 60px;
-}
-
-.nav__crumbs {
-    margin-bottom: 50px;
 }
 
 .section__form {
@@ -15,9 +11,8 @@
     display: flex;
     flex-direction: column;
     background-color: #E5EAF8;
-    padding: 42px 40px;
+    padding: 48px 44px;
     gap: 20px;
-    margin-top: 68px;
 }
 
 .section__label {
@@ -42,7 +37,7 @@
 .section__container-message {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
 }
 
 .section__btn {
@@ -133,12 +128,6 @@
     margin-top: 5px;
 }
 
-.section__description {
-    margin-top: 68px;
-    max-height: 540px;
-    overflow: auto;
-}
-
 .section__input-checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -154,7 +143,7 @@
     width: 19px;
     height: 19px;
     position: absolute;
-    background-image: url(../images/contactUS/checkbox.svg);
+    background-image: url(../img/contactUS/checkbox.svg);
 }
 
 .section__description-label {
@@ -166,11 +155,11 @@
 }
 
 .section__input-checkbox:checked+.section__span {
-    background-image: url(../images/contactUS/checkboxchecked.svg);
+    background-image: url(../img/contactUS/checkboxchecked.svg);
 }
 
 .section__input-checkbox:disabled+.section__span {
-    background-image: url(../images/contactUS/checkdisabled.svg);
+    background-image: url(../img/contactUS/checkdisabled.svg);
 }
 
 .section__input-checkbox:disabled~.section__description-label {

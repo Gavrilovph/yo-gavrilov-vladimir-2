@@ -17,7 +17,7 @@
 
     
 
-    <link rel="stylesheet" href="css/style.min.css?v=1689079869543">
+    <link rel="stylesheet" href="css/style.min.css?v=1689343885712">
   </head>
   <body>
     <header class="header container">
@@ -25,9 +25,12 @@
         <a href="/" class="header__link-index"></a>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="./blog.html" class="header__nav-link">BLOG</a></li>
                 <li class="header__nav-item"><a href="./catalog.html" class="header__nav-link">CATALOG</a></li>
                 <li class="header__nav-item"><a href="/" class="header__nav-link">ABOUT US</a></li>
+                <li class="header__nav-item"><a href="./blog.html" class="header__nav-link">BLOG</a></li>
+                <li class="header__nav-item"><a href="/" class="header__nav-link">ANIMATION</a></li>
+                <li class="header__nav-item"><a href="/" class="header__nav-link">SVG</a></li>
+                <li class="header__nav-item"><a href="/" class="header__nav-link">GRID</a></li>
             </ul>
         </nav>
     </div>
@@ -40,12 +43,15 @@
     </ul>
 </header>
     <div class="nav">
-        <h1 class="nav__title">Category products</h1>
+    <h1 class="nav__title">Catalog</h1>
+    <nav class="nav__crumbs">
         <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
+            <li class="nav__hidden"><a class="nav__link" href="./catalog.html"></a>@@pretext</li>
             <li class="nav__item current">Catalog</li>
         </ul>
-    </div>
+    </nav>
+</div>
     <section class="catalog">
         <ul class="catalog__upperlist">
             <li class="catalog__item catalog__apparel">
@@ -93,7 +99,7 @@
     </section>
     <footer class="footer">
   <div class="footer__blockorder">
-      <div class="footer__top-row">
+      <div class="footer__topRow">
           <div class="footer__navigation">
               <h2 class="footer__navigation-text">Navigation</h2>
               <nav class="footer__navigation-col">
@@ -149,7 +155,7 @@
               </div>
           </div>
       </div>
-      <div class="footer__lower-row">
+      <div class="footer__lowerRow">
           <div class="footer__raiting-container">
               <div class="footer__text-wrapper">
                   <p class="footer__text">Company Rating</p>

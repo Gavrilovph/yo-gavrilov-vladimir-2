@@ -56,9 +56,6 @@
                   <li class="banner__content-item">
                       <button class="banner__btn modal__btn" type="button">EXPLORE NOW</button>
                   </li>
-                  <!-- <li class="banner__content-item">
-                      <img src="./img/MainImage.png" alt="image of monster in main" class="banner__img">
-                  </li> --> <!-- решил сделать вне списка для удобства стилизации-->
                   <li class="banner__content-item"></li>
               </ul>
           </div>
@@ -68,26 +65,30 @@
   <section class="slider">
       <h2 class="slider__title">CATEGORY PRODUCTS</h2>
       <ul class="slider__list">
-          <li class="slider__item slider__kids">
-              <img class="slider__img" src="./img/category/sweater.png" width="244" height="178"
-                  alt="images of apparel kids category">
-              <a class="slider__link slider__link-kids" href="#">Apparel kids</a>
-          </li>
-          <li class="slider__item slider__shop">
-              <img class="slider__img" src="./img/category/soxs.png" width="208" height="244"
-                  alt="images of holliday shop category">
-              <a class="slider__link" href="#">Holiday shop</a>
-          </li>
-          <li class="slider__item slider__toys">
-              <img class="slider__img slider__img-toys" src="./img/category/deer.png" width="270" height="270"
-                  alt="images of toys category">
-              <a class="slider__link slider__link-toys" href="./toys.html">Toys</a>
-          </li>
-          <li class="slider__item slider__accesories">
-              <img class="slider__img" src="./img/category/eti.png" width="240" height="250"
-                  alt="images of accesories category">
-              <a class="slider__link slider__link-accessories" href="#">Accessories</a>
-          </li>
+        @@include('./blocks/slider__item.html', {
+            'img':"./img/category/sweater.png",
+            'link':"#",
+            'text':"APPAREL KIDS",
+            'class':"slider__kids",
+        })
+        @@include('./blocks/slider__item.html', {
+            'img':"./img/category/soxs.png",
+            'link':"#",
+            'text':"HOLIDAY SHOP",
+            'class':"slider__shop",
+        })
+        @@include('./blocks/slider__item.html', {
+            'img':"./img/category/deer.png",
+            'link':"./toys.html",
+            'text':"TOYS",
+            'class':"slider__toys",
+        })
+        @@include('./blocks/slider__item.html', {
+            'img':"./img/category/eti.png",
+            'link':"#",
+            'text':"ACCESSORIES",
+            'class':"slider__accesories"
+        })
       </ul>
       <div class="slider__buttons">
           <button class="slider__btn slider__leftBtn" type="button"></button> <!---left arrow button-->
@@ -158,47 +159,12 @@
           </p>
           <iframe class="info__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.6900804752245!2d49.28962379124187!3d53.5124506904755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sen!2sru!4v1683368862385!5m2!1sen!2sru"
-              width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy"
+              width="483" height="208" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
   </section>
   @@include('./blocks/footer.html')
-  <div class="modal" id="modal">
-      <div class="modal__body">
-          <div class="modal__content">
-              <a class="modal__close" href="#"></a>
-              <form class="section__form" action="#">
-                  <div class="section__container-name wrapper">
-                      <label class="section__label" for="Name">Name</label>
-                      <input class="section__input section__name" type="text" id="Name" placeholder="">
-                  </div>
-                  <div class="section__container-data wrapper">
-                      <div class="section__container-tel">
-                          <label class="section__label" for="Telephone">Phone</label>
-                          <input class="section__input section__telephone" type="tel" id="Telephone">
-                      </div>
-                      <div class="section__container-email">
-                          <label class="section__label" for="Email">Email</label>
-                          <input class="section__input section__email" type="text" id="Email">
-                      </div>
-                  </div>
-                  <div class="section__container-message wrapper">
-                      <label class="section__label" for="Message">Message</label>
-                      <input class="section__input section__message" type="text" id="Message">
-                  </div>
-                  <div class="section__container-description wrapper">
-                      <input class="section__input-checkbox" type="checkbox" id="checkbox">
-                      <span class="section__span"></span>
-                      <label class="section__label section__description-label" for="checkbox">By clicking on the
-                          button, you
-                          consent to the processing of
-                          your personal data</label>
-                  </div>
-                  <button class="section__btn" type="submit" disabled>Submit</button>
-              </form>
-          </div>
-      </div>
-  </div>
+  @@include('./blocks/modal.html')
   <script src="./js/raitingmin.js"></script>
   <script src="./js/modalmin.js"></script>
 

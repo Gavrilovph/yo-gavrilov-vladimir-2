@@ -1,36 +1,4 @@
 
-.nav__title {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 700;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.nav__list {
-    display: flex;
-    list-style-type: none;
-    font-weight: 400;
-    font-family: 'Crimson Text', Arial, sans-serif;
-    font-size: 20px;
-}
-
-.nav__item:not(:last-child):after {
-    content: url(../images/Crumbs.svg);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.nav__link {
-    color: #000000;
-    text-decoration: none;
-}
-
-.current {
-    color: #000000;
-    opacity: 50%;
-}
-
 .catalog {
     max-width: 1178px;
     margin: auto;
@@ -46,7 +14,6 @@
     font-size: 26px;
     font-weight: 700;
 }
-
 
 .catalog__lowerlist {
     margin-top: 23px;

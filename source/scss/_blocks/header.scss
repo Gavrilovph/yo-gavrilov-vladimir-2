@@ -6,27 +6,111 @@
     margin-top: 50px;
     margin-bottom: 62px;
     justify-content: space-between;
+    &__leftblock {
+      display: flex;
+      align-items: center;
+    }
+    &__link{
+      &-index {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 52px;
+        width: 100px;
+        background-image: url(../img/LOGO.svg);
+        margin-left: -2px;
+        &:hover {
+          opacity: 50%;
+        }
+        &:active {
+          opacity: 20%;
+        }
+      }
+    }
+    &__nav{
+      &-list {
+        display: flex;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 50px;
+      }
+      &-item {
+        margin: 10px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        list-style-type: none;
+        color: #1E0606;
+        white-space: nowrap;
+        &>a:visited {
+          color: #1E0606
+        }
+        &>a:hover{
+          opacity: 50%;
+        }
+        &>a:active {
+          opacity: 20%;
+        }
+        &>a {
+          text-decoration: none;
+        }
+      }
+    }
+    &__row{
+      &-list {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+      &-item {
+        margin: 11px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 700;
+        list-style-type: none;
+        color: #1E0606;
+        white-space: nowrap;
+        &>a:visited {
+          color: #1E0606
+        }
+        &>a:hover{
+          opacity: 50%;
+        }
+        &>a:active {
+          opacity: 20%;
+        }
+        &>img:hover {
+          opacity: 50%;
+        }
+        &>img:active {
+          opacity: 20%;
+        }
+        &>a {
+          text-decoration: none;
+        }
+      }
+    }
+    &__search{
+      &-icon {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        margin-right: -1px;
+        background-image: url(../img/search.svg);
+        &:hover {
+          opacity: 50%;
+        }
+        &:active {
+          opacity: 20%;
+        }
+      }
+      &-hide {
+        display: none;
+      }    
+    }
+    &__link {
+      padding-left: 5px;
+      margin-right: -12px;
+    }
   }
   
-  .header__leftblock {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__link-index {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 52px;
-    width: 100px;
-    background-image: url(../img/LOGO.svg);
-    margin-left: -2px;
-  }
-  
-  .header__link-index:hover {
-    opacity: 50%;
-  }
-  
-  .header__link-index:active {
-    opacity: 20%;
-  }

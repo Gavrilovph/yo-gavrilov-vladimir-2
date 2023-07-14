@@ -398,15 +398,15 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 
 .filter__button:hover {
-    background-color: #C29974;
+    @include btn-hover;
 }
 
 .filter__button:active {
-    background-color: #CFAF91;
+    @include btn-active;
 }
 
 .filter__button:disabled {
-    background-color: #C7C1C1;
+    @include btn-disabled;
 }
 
 .goods {

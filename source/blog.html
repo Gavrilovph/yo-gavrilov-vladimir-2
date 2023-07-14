@@ -23,91 +23,52 @@
   </head>
   <body>
     @@include('./blocks/header.html')
-    <div class="nav">
-        <h1 class="nav__title">Blog</h1>
-        <nav class="nav__crumbs">
-            <ol class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
-                <li class="nav__item current__blog">Blog</li>
-            </ol>
-        </nav>
-    </div>
+    @@include('./blocks/crumps.html',{
+        'title':"Blog",
+        'text':"Blog",
+        'class':"nav__hidden",
+    })
     <section class="articles">
         <h2 class="articles__title">Articles</h2>
         <ul class="articles__list">
-            <li class="articles__item">
-                <img class="articles__image" src="./img/blog/lego.jpg" width="380" height="220" alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Top 5 fastest growing it service companies in philly</a>
-                <p class="articles__descripton">Direct Line Development’s Team is excited to announce that we received
-                    UpCity’s 2019 Local Excellence
-                    Award! This prestigious award is annually presented to the Top 1% of service providers in the given
-                    marketplace.</p>
-            </li>
-            <li class="articles__item">
-                <img class="articles__image" src="./img/blog/unicorn.jpg" width="380" height="220"
-                    alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Best financial</a>
-                <p class="articles__descripton">Direct Line Development is honored to be recognized as one of the Top
-                    100 Fastest Growing Companies
-                    2019 in Philadelphia, according to Growjo’s ranking.</p>
-            </li>
-            <li class="articles__item">
-                <img class="articles__image" src="./img/blog/blocks.jpg" alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Company logo or brand identity: which one is more important? brand
-                    identity</a>
-                <p class="articles__descripton">To survive in the world of digital marketing, you need to keep up with
-                    the latest SEO trends. Here
-                    are our simple, but effective, SEO tips for small business success.</p>
-            </li>
-            <li class="articles__item articles__lowRow">
-                <img class="articles__image" src="./img/blog/captan.jpg" width="380" height="220"
-                    alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Best financial</a>
-                <p class="articles__descripton">Direct Line Development is honored to be recognized as one of the Top
-                    100 Fastest Growing Companies
-                    2019 in Philadelphia, according to Growjo’s ranking.</p>
-            </li>
-            <li class="articles__item articles__lowRow">
-                <img class="articles__image" src="./img/blog/doll.jpg" width="380" height="220" alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Company logo or brand identity: which one is more important? brand
-                    identity</a>
-                <p class="articles__descripton">To survive in the world of digital marketing, you need to keep up with
-                    the latest SEO trends. Here
-                    are our simple, but effective, SEO tips for small business success.</p>
-            </li>
-            <li class="articles__item articles__lowRow">
-                <img class="articles__image" src="./img/blog/dice.jpg" width="380" height="220" alt="article image">
-                <p class="articles__date">23rd August 2018</p>
-                <a href="#" class="articles__link">Top 5 fastest growing it service companies in philly</a>
-                <p class="articles__descripton">Direct Line Development’s Team is excited to announce that we received
-                    UpCity’s 2019 Local Excellence
-                    Award! This prestigious award is annually presented to the Top 1% of service providers in the given
-                    marketplace.</p>
-            </li>
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/lego.jpg",
+                'date': "23rd August 2018",
+                'title': "Top 5 fastest growing it service companies in philly",
+                'text': "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace."
+            })
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/unicorn.jpg",
+                'date': "23rd August 2018",
+                'title': "Best financial",
+                'text': "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+            })
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/blocks.jpg",
+                'date': "23rd August 2018",
+                'title': "Company logo or brand identity: which one is more important? brand identity",
+                'text': "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+            })
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/captan.jpg",
+                'date': "23rd August 2018",
+                'title': "Best financial",
+                'text': "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+            })
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/doll.jpg",
+                'date': "23rd August 2018",
+                'title': "Company logo or brand identity: which one is more important? brand identity",
+                'text': "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+            })
+            @@include('./blocks/articles__item.html', {
+                'img': "./img/blog/dice.jpg",
+                'date': "23rd August 2018",
+                'title': "Top 5 fastest growing it service companies in philly",
+                'text': "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace."
+            })
         </ul>
-        <div class="pagination__pages"> <!--pages links-->
-            <a href="#" class="pagination__arrow pagination__arrowleft"></a> <!--need to add arrows in css-->
-            <ol class="pagination__pages-list">
-                <li class="pagination__pages-item">
-                    <a class="pagination__pages-link" href="#">1</a>
-                </li>
-                <li class="pagination__pages-item">
-                    <a class="pagination__pages-link" href="#">2</a>
-                </li>
-                <li class="pagination__pages-item">
-                    <a class="pagination__pages-link" href="#">3</a>
-                </li>
-                <li class="pagination__pages-item">
-                    <a class="pagination__pages-link" href="#">4</a>
-                </li>
-            </ol>
-            <a href="#" class="pagination__arrow pagination__arrowRight"></a> <!--need to add arrows in css-->
-        </div>
+        @@include('./blocks/pagination__pages.html')
     </section>
     @@include('./blocks/footer.html')
     <script src="/js/raitingmin.js"></script>

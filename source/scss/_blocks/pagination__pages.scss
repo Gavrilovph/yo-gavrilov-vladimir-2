@@ -1,0 +1,91 @@
+
+.pagination__pages {
+    width: 1174px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pagination__pages-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 234px;
+    gap: 66px;
+  }
+  
+  .pagination__pages-item>a {
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E0606;
+  }
+  
+  .pagination__pages-item:first-child>a {
+    color: #C29974;
+  }
+  
+  .pagination__pages-item:hover>a {
+    color: #AAAAAA;
+  }
+  
+  .pagination__arrowleft {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrow.svg);
+    opacity: 12%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+    margin-top: -6px;
+    margin-left: -1px;
+  }
+  
+  .pagination__arrowleft:hover {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrowhover.svg);
+    opacity: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+  }
+  
+  .pagination__arrowleft:active {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrowhover.svg);
+    opacity: 70%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+  }
+  
+  .pagination__arrowRight {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrow.svg);
+    opacity: 12%;
+    background-position: center;
+    margin-top: -6px;
+    margin-right: -5px;
+  }
+  
+  .pagination__arrowRight:hover {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrowhover.svg);
+    opacity: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .pagination__arrowRight:active {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrowhover.svg);
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  

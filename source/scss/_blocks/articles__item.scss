@@ -1,0 +1,38 @@
+
+.articles__item {
+    width: 380px;
+    margin-bottom: 36px;
+}
+
+.articles__link {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.articles__link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.articles__descripton {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.articles__date {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #818181;
+    margin-top: 17px;
+    margin-bottom: 7px;
+}

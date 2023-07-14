@@ -23,16 +23,13 @@
   </head>
   <body>
   @@include('./blocks/header.html')
-  <div class="nav">
-      <h1 class="nav__title">Toy for kids</h1>
-      <nav class="nav__crumbs">
-          <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
-              <li class="nav__item"><a class="nav__link" href="./catalog.html">Catalog</a></li>
-              <li class="nav__item current">Toys</li>
-          </ul>
-      </nav>
-  </div>
+      @@include('./blocks/crumps.html',{
+        'title':"Toy for kids",
+        'text':"Toys",
+        'class':"nav__item",
+        'pretext':"Catalog",
+        'link':"./catalog.html",
+    })
   <form class="filter">
       <div class="filter__range">
           <p class="filter__text filter__cost-text">Cost</p>
@@ -180,24 +177,7 @@
               </div>
           </li>
       </ul>
-      <div class="pagination__pages pagination__pages-margin"> <!--pages links-->
-          <a href="#" class="pagination__arrow pagination__arrowleft"></a> <!--need to add arrows in css-->
-          <ol class="pagination__pages-list">
-              <li class="pagination__pages-item">
-                  <a class="pagination__pages-link" href="#">1</a>
-              </li>
-              <li class="pagination__pages-item">
-                  <a class="pagination__pages-link" href="#">2</a>
-              </li>
-              <li class="pagination__pages-item">
-                  <a class="pagination__pages-link" href="#">3</a>
-              </li>
-              <li class="pagination__pages-item">
-                  <a class="pagination__pages-link" href="#">4</a>
-              </li>
-          </ol>
-          <a href="#" class="pagination__arrow pagination__arrowRight"></a> <!--need to add arrows in css-->
-      </div>
+      @@include('./blocks/pagination__pages.html')
   </section>
   @@include('./blocks/footer.html')
   <script src="../js/range-inputmin.js"></script>

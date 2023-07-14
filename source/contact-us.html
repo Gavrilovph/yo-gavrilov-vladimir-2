@@ -23,15 +23,11 @@
   </head>
   <body>
   @@include('./blocks/header.html')
-  <div class="nav">
-      <h1 class="nav__title">CONTACT US</h1>
-      <nav class="nav__crumbs">
-          <ol class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
-              <li class="nav__item current">Contact Us</li>
-          </ol>
-      </nav>
-  </div>
+  @@include('./blocks/crumps.html',{
+    'title':"Contact us",
+    'text':"Contact Us",
+    'class':"nav__hidden",
+})
   <div class="section">
       <form class="section__form" action="#">
           <div class="section__container-name wrapper">
@@ -50,7 +46,6 @@
           </div>
           <div class="section__container-message wrapper">
               <label class="section__label" for="Message">Message</label>
-              <!-- <input class="section__input section__message" type="text" id="Message"> -->
               <textarea class="section__textaria" name="#" id="Message" cols="30" rows="10"></textarea>
           </div>
           <div class="section__container-description wrapper">
