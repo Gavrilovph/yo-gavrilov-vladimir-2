@@ -1344,16 +1344,16 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   top: 20%;
   scale: 80%;
 }
-.animation__taxy {
+.animation__taxi {
   position: absolute;
   top: 47%;
   left: 94%;
   scale: 80%;
   z-index: 3;
-  -webkit-animation: taxy 15s ease-in-out infinite;
-          animation: taxy 15s ease-in-out infinite;
+  -webkit-animation: taxi 15s ease-in-out infinite;
+          animation: taxi 15s ease-in-out infinite;
 }
-@-webkit-keyframes taxy {
+@-webkit-keyframes taxi {
   0%, 30% {
     left: 94%;
   }
@@ -1364,7 +1364,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     left: -78%;
   }
 }
-@keyframes taxy {
+@keyframes taxi {
   0%, 30% {
     left: 94%;
   }

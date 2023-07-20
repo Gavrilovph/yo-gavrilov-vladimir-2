@@ -136,16 +136,16 @@
         scale: 80%;
     }
 
-    &__taxy {
+    &__taxi {
         position: absolute;
         top: 47%;
         left: 94%;
         scale: 80%;
         z-index: 3;
-        animation: taxy 15s ease-in-out infinite;
+        animation: taxi 15s ease-in-out infinite;
     }
 
-    @keyframes taxy {
+    @keyframes taxi {
 
         0%,
         30% {
