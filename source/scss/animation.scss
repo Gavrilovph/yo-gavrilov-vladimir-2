@@ -1,0 +1,312 @@
+.animation {
+    position: relative;
+    overflow: hidden;
+
+    &__clouds {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+
+
+        &-sky {
+            position: absolute;
+            z-index: 2;
+            scale: 85%;
+            top: -1%;
+            right: -40%;
+            animation: sky 20s ease-in-out infinite;
+        }
+
+        @keyframes sky {
+            50% {
+                right: -33%;
+            }
+
+            100% {
+                right: -40%;
+            }
+
+        }
+    }
+
+    &__city {
+        max-width: 100%;
+        margin-bottom: 70px;
+        scale: 115%;
+    }
+
+    &__cars {
+        position: absolute;
+        top: 53%;
+        scale: 70%;
+
+        &-one {
+            position: absolute;
+            z-index: 1;
+            padding-top: 20px;
+            margin-right: 40px;
+            animation-name: carOne;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        &-two {
+            position: absolute;
+            z-index: 0;
+            margin-right: -50px;
+            animation-name: carTwo;
+            animation-duration: 15s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        &-three {
+            position: absolute;
+            animation-name: carThree;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            z-index: -1;
+        }
+
+        &-four {
+            position: absolute;
+            margin-left: 40px;
+            padding-top: 10px;
+            z-index: 2;
+            // animation-name: carFour;
+            // animation-duration: 10s;
+            // animation-timing-function: ease-in;
+            // animation-iteration-count: infinite;
+            animation: carFour 10s ease-in infinite;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        list-style-type: none;
+        display: flex;
+        gap: 90px;
+
+    }
+
+    // keyframes for cars
+
+    @keyframes carOne {
+        0% {
+            margin-left: -270px;
+        }
+
+        100% {
+            margin-left: 2000px;
+        }
+    }
+
+    @keyframes carTwo {
+        0% {
+            margin-left: -500px;
+        }
+
+        100% {
+            margin-left: 2000px;
+        }
+    }
+
+    @keyframes carThree {
+        0% {
+            margin-left: -500px;
+        }
+
+        100% {
+            margin-left: 2000px;
+        }
+    }
+
+    @keyframes carFour {
+        0% {
+            margin-left: -600px;
+        }
+
+        100% {
+            margin-left: 2000px;
+        }
+    }
+
+
+    &__lanterns {
+        position: absolute;
+        top: 20%;
+        scale: 80%;
+    }
+
+    &__taxy {
+        position: absolute;
+        top: 47%;
+        left: 94%;
+        scale: 80%;
+        z-index: 3;
+        animation: taxy 15s ease-in-out infinite;
+    }
+
+    @keyframes taxy {
+
+        0%,
+        30% {
+            left: 94%;
+        }
+
+        50%,
+        90% {
+            left: 34%;
+        }
+
+        100% {
+            left: -78%;
+        }
+    }
+
+    &__lantern {
+        position: absolute;
+        top: 18%;
+        left: 73%;
+        scale: 80%;
+        z-index: 4;
+
+        &-light {
+            &-one {
+                position: absolute;
+                left: 79%;
+                top: 15%;
+                z-index: 4;
+                opacity: 10%;
+                animation: lightOne 2s ease-in-out infinite;
+            }
+
+            @keyframes lightOne {
+                0% {
+                    opacity: 75%;
+                }
+
+                50% {
+                    opacity: 100%;
+                }
+
+                100% {
+                    opacity: 75%;
+                }
+            }
+
+            &-two {
+                position: absolute;
+                left: 68%;
+                top: 15%;
+                z-index: 4;
+                opacity: 70%;
+                animation: lightTwo 2s ease-in-out infinite;
+            }
+
+            @keyframes lightTwo {
+                0% {
+                    opacity: 75%;
+                }
+
+                50% {
+                    opacity: 100%;
+                }
+
+                100% {
+                    opacity: 75%;
+                }
+            }
+        }
+    }
+
+    &__people {
+        position: absolute;
+        top: 43%;
+        left: 10%;
+        scale: 85%;
+        z-index: 4;
+
+        &-woman {
+            position: relative;
+            z-index: 1;
+
+            &-hand {
+                position: absolute;
+                top: 56%;
+                right: 69%;
+                z-index: 1;
+                animation: womanHand 15s ease-in-out infinite;
+            }
+
+
+            @keyframes womanHand {
+
+                0%,
+                10% {
+                    transform: rotate(0);
+                    transform-origin: 1 0 0;
+                }
+
+                16%,
+                24% {
+                    transform: rotate(-45deg);
+                    transform-origin: 0 0 0;
+                }
+
+                30% {
+                    transform: rotate(0deg);
+                    transform-origin: 0 0 0;
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                    transform-origin: 0 0 0;
+                }
+            }
+
+        }
+
+        &-man {
+            position: relative;
+            margin-left: -60px;
+
+            &-hand {
+                position: absolute;
+                right: 30%;
+                bottom: 75%;
+                transform: rotate(125deg);
+                transform-origin: bottom left;
+                animation: manHand 15s ease-in-out infinite;
+            }
+
+            @keyframes manHand {
+
+                0%,
+                35% {
+                    transform: rotate(125deg);
+                    transform-origin: bottom left;
+                }
+
+                42%,
+                48% {
+                    transform: rotate(-1deg);
+                    transform-origin: bottom left;
+                }
+
+                55% {
+                    transform: rotate(125deg);
+                    transform-origin: bottom left;
+                }
+
+                100% {
+                    transform: rotate(125deg);
+                    transform-origin: bottom left;
+                }
+            }
+
+        }
+    }
+}

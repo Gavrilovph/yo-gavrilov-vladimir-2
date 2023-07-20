@@ -4,184 +4,140 @@
     display: flex;
     gap: 122px;
     margin-bottom: 60px;
-}
-
-.section__form {
-    width: 680px;
-    display: flex;
-    flex-direction: column;
-    background-color: #E5EAF8;
-    padding: 48px 44px;
-    gap: 20px;
-}
-
-.section__label {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-}
-
-
-.section__container-data {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-.section__container-name,
-.section__container-tel,
-.section__container-email,
-.section__container-message {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.section__btn {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    text-transform: uppercase;
-    padding: 9px 22px;
-    border: none;
-    background-color: #000000;
-    color: #ffffff;
-    max-width: fit-content;
-    cursor: pointer;
-    margin-top: -2px;
-}
-
-.section__btn:hover {
-    background-color: #C29974;
-}
-
-.section__btn:active {
-    background-color: #CFAF91;
-}
-
-.section__btn:disabled {
-    background-color: #C7C1C1;
-}
-
-.section__container-tel,
-.section__container-email {
-    width: 100%;
-}
-
-.section__container-email {
-    margin-left: 20px;
-}
-
-.section__input {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    padding-left: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-}
-
-.section__name,
-.section__telephone,
-.section__email {
-    height: 50px;
-}
-
-.section__textaria{
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    height: 140px;
-    width: 590px;
-    padding: 15px 20px 0;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    resize: none;
-    outline: none;
-}
-
-.section__textaria:hover{
-    border-color: #C29974;
-}
-
-.section__textaria:active{
-    border-color: #C29974;
-}
-
-.section__textaria:focus{
-    border-color: #C29974;
-}
-
-.section__name {
-    padding-left: 20px;
-    font-size: 18px;
-    color: #000000;
-}
-
-.section__container-description {
-    display: flex;
-    align-items: start;
-    gap: 15px;
-    margin-top: 5px;
-}
-
-.section__input-checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.section__span {
-    width: 19px;
-    height: 19px;
-    position: absolute;
-    background-image: url(../img/contactUS/checkbox.svg);
-}
-
-.section__description-label {
-    margin-left: 35px;
-}
-
-.section__input-checkbox:hover~.section__description-label {
-    text-decoration: underline;
-}
-
-.section__input-checkbox:checked+.section__span {
-    background-image: url(../img/contactUS/checkboxchecked.svg);
-}
-
-.section__input-checkbox:disabled+.section__span {
-    background-image: url(../img/contactUS/checkdisabled.svg);
-}
-
-.section__input-checkbox:disabled~.section__description-label {
-    color: #908484;
-}
-
-.section__list {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style-type: none;
-}
-
-.section__item-shout {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    color: #C29974;
-    text-transform: uppercase;
+    &__form {
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        background-color: #E5EAF8;
+        padding: 48px 44px;
+        gap: 20px;
+    }
+    &__label {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__container{
+        &-data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-name,
+        &-tel,
+        &-email,
+        &-message {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        &-tel,
+        &-email{
+            width: 100%;
+        }
+        &-email {
+            margin-left: 20px;
+        }
+        &-description {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-top: 5px;
+        }
+    }
+    &__btn {
+        @include btn;
+        line-height: 22px;
+        padding: 9px 22px;
+        max-width: fit-content;
+        margin-top: -2px;
+    }
+    &__input {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding-left: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        &-checkbox {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            z-index: 1;
+            cursor: pointer;
+            &:hover~.section__description-label {
+                text-decoration: underline;
+            }
+            &:checked+.section__span {
+                background-image: url(../img/contactUS/checkboxchecked.svg);
+            }
+            &:disabled+.section__span {
+                background-image: url(../img/contactUS/checkdisabled.svg);
+            }
+            &:disabled~.section__description-label {
+                color: #908484;
+            }
+        }
+    }
+    &__name,
+    &__telephone,
+    &__email {
+        height: 50px;
+    }
+    &__name {
+        padding-left: 20px;
+        font-size: 18px;
+        color: #000000;
+    }
+    &__textaria{
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        height: 140px;
+        width: 590px;
+        padding: 15px 20px 0;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        resize: none;
+        outline: none;
+        &:hover,
+        &:active,
+        &:focus{
+            border-color: #C29974;
+        }
+    }
+    &__span {
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        background-image: url(../img/contactUS/checkbox.svg);
+    }
+    &__description{
+        &-label {
+            margin-left: 35px;
+        }
+    }
+    &__list {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+    }
+    &__item{
+        &-shout {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 34px;
+            color: #C29974;
+            text-transform: uppercase;
+        }
+    }
 }

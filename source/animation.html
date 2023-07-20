@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DLK</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    @@include('./blocks/header.html')
+    @@include('./blocks/crumps.html',{
+    'title':"Animation scene",
+    'text':"Animation",
+    'class':"nav__hidden",
+    })
+    <div class="animation container">
+        <img class="animation__clouds" src="./img/animation/Clouds.png" alt="clouds picture">
+        <img class="animation__clouds-sky" src="./img/animation/SkyClouds.png" alt="clouds picture">
+        <img class="animation__city" src="./img/animation/City.png" alt="city picture">
+        <div class="animation__cars">
+            <ul class="animation__list">
+                <li class="animation__item"><img class="animation__cars-one" src="./img/animation/CarOne.png"
+                        alt="car picture">
+                </li>
+                <li class="animation__item"><img class="animation__cars-two" src="./img/animation/CarTwo.png"
+                        alt="car picture">
+                </li>
+                <li class="animation__item"><img class="animation__cars-three" src="./img/animation/CarThree.png"
+                        alt="car picture"></li>
+                <li class="animation__item"><img class="animation__cars-four" src="./img/animation/CarFour.png"
+                        alt="car picture">
+                </li>
+            </ul>
+        </div>
+        <div class="animation__lanterns">
+            <img class="animation__lanterns-one" src="./img/animation/Lanterns.png" alt="">
+            <img class="animation__lanterns-two" src="./img/animation/Lanterns.png" alt="">
+        </div>
+        <img class="animation__taxy" src="./img/animation/Car.png" alt="">
+        <img class="animation__lantern" src="./img/animation/Lantern.png" alt="">
+        <img class="animation__lantern-light-one" src="./img/animation/LaternLight.png" alt="">
+        <img class="animation__lantern-light-two" src="./img/animation/LaternLight.png" alt="">
+        <div class="animation__people">
+            <img class="animation__people-woman" src="./img/animation/WomanBody.png" alt="">
+            <img class="animation__people-woman-hand" src="./img/animation/WomanHand.png" alt="">
+            <img class="animation__people-man-hand" src="./img/animation/ManHand.png" alt="">
+            <img class="animation__people-man" src="./img/animation/ManBody.png" alt="">
+        </div>
+        @@include('./blocks/animation__message.html', {
+        'messageclass': "woman",
+        'img':"/img/animation/TaxiMessage.png",
+        'textclass':"womantext",
+        'text':"Иван, смотри, такси едет!",
+        })
+
+        @@include('./blocks/animation__message.html', {
+        'messageclass': "man",
+        'img':"/img/animation/MessageCloud.png",
+        'textclass':"mantext",
+        'text':"Таксуешь?",
+        })
+
+        @@include('./blocks/animation__message.html', {
+        'messageclass': "manSecond",
+        'img':"/img/animation/MessageCloud.png",
+        'textclass':"mantext",
+        'text':"You bastard!",
+        })
+
+        @@include('./blocks/animation__message.html', {
+        'messageclass':"driver",
+        'img':"/img/animation/TaxiMessage.png",
+        'textclass':"drivertext",
+        'text':"Это временная работа! Ващет у меня свой бизнес. Я спешу!",
+        })
+
+        <!-- @@include('./blocks/animation__text.html', {
+        'img': "/img/animation/MesageCloud.png",
+        'subclass': "message-driver-first",
+        }) -->
+    </div>
+    @@include('./blocks/footer.html')
+    <script src="./js/raitingmin.js"></script>
+    <script src="js/app.js" defer></script>
+</body>

@@ -24,25 +24,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* link styles */
+
+link:visited{
+  color: white;
+}
+
 /* form styles */
 
 .section__input {
   box-sizing: border-box;
   outline: none;
-}
-
-.section__input:hover {
-  border-color: #C29974;
-}
-
-.section__input:active {
-  border-color: #C29974;
-}
-
-.section__input:focus {
-  border-color: #C29974;
-}
-
-.section__input:disabled {
-  border-color: #EBEBEB;
+  &:hover,
+  &:active,
+  &:focus{
+    border-color: #C29974;
+  }
+  &:disabled {
+    border-color: #EBEBEB;
+  }
 }

@@ -2,6 +2,7 @@
 // Buttons conditions
 
 @mixin btn-hover{
+  transition: 0.3s;
   background-color: #C29974;
   color: #FFFFFF;
 }

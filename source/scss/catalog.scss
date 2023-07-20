@@ -1,121 +1,98 @@
-
 .catalog {
     max-width: 1178px;
     margin: auto;
     margin-top: 52px;
-}
-
-.catalog__upperlist {
-    display: flex;
-    gap: 20px;
-    width: 1080px;
-    list-style-type: none;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-}
-
-.catalog__lowerlist {
-    margin-top: 23px;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    width: 1080px;
-    list-style-type: none;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-}
-
-.catalog__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    height: 270px;
-}
-
-.catalog__item>a {
-    max-width: 200px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-}
-
-.catalog__apparel {
-    background-color: #DBE4DB;
-}
-
-.catalog__holiday {
-    background-color: #EADDD3;
-}
-
-.catalog__toys {
-    background-color: #F8F2DA;
-}
-
-.catalog__accesories {
-    background-color: #D5D4E1;
-}
-
-.catalog__sale {
-    background-color: #F3D0DB;
-}
-
-.catalog__adults {
-    background-color: #E5EAF8;
-}
-
-.catalog__link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.catalog__link:hover {
-    text-decoration: underline;
-}
-
-.catalog__link:active {
-    text-decoration: underline;
-}
-
-.catalog__img {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.catalog__title {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.catalog__discription-owerflow{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 26px;
-}
-
-.catalog__text {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-
-}
-
-.catalog__textblock {
-    max-width: 680px;
-    margin: 56px auto 56px 17%;
-}
-
-.catalog__textblock p:nth-child(4) {
-    margin-top: 15px;
+    &__upperlist {
+        display: flex;
+        gap: 20px;
+        width: 1080px;
+        list-style-type: none;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__lowerlist {
+        margin-top: 23px;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        width: 1080px;
+        list-style-type: none;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 270px;
+        &>a {
+            max-width: 200px;
+            z-index: 1;
+            position: absolute;
+            text-align: center;
+        }
+    }
+    &__apparel {
+        background-color: #DBE4DB;
+    }
+    &__holiday {
+        background-color: #EADDD3;
+    }
+    &__toys {
+        background-color: #F8F2DA;
+    }
+    &__accesories {
+        background-color: #D5D4E1;
+    }
+    &__sale {
+        background-color: #F3D0DB;
+    }
+    &__adults {
+        background-color: #E5EAF8;
+    }
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+    &__img {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__discription{
+        &-owerflow{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 26px;
+        }
+    }
+    &__text {
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    
+    }
+    &__textblock {
+        max-width: 680px;
+        margin: 56px auto 56px 17%;
+    }
 }

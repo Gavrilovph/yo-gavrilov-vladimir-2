@@ -17,7 +17,7 @@
 @import "contact-us.scss";
 @import "catalog.scss";
 @import "blog.scss";
-
+@import "animation.scss";
 
 
 /*
@@ -31,6 +31,8 @@
 @import "_blocks/pagination__pages";
 @import "_blocks/crumps";
 @import "_blocks/modal";
+@import "_blocks/animation__text";
+@import "_blocks/animation__message";
 
 
 
@@ -54,8 +56,10 @@
   margin: auto;
   margin-top: 129px;
   background-color: #EEE4DB;
-  &__slider{
+
+  &__slider {
     margin-top: 17px;
+
     &-number {
       position: relative;
       top: 1%;
@@ -66,6 +70,7 @@
       opacity: 5%;
       margin-left: 28px;
     }
+
     &-list {
       margin-left: 30px;
       margin-top: 4%;
@@ -73,48 +78,67 @@
       outline: none;
       border-width: none;
     }
+
     &-item {
       width: 31px;
       height: 3px;
+
       &:not(:first-child) {
         margin-top: 11px;
       }
     }
+
     &-item>button {
-    background-color: #D6CAC2;
-    border: 0;
-    width: 31px;
-    height: 3px;
+      background-color: #D6CAC2;
+      border: 0;
+      width: 31px;
+      height: 3px;
     }
+
     &-item>button:hover {
       background-color: #1E060699;
       cursor: pointer;
+      transition: 0.3s;
     }
+
     &-item>button:focus {
       background-color: #725F5B;
     }
   }
-  &__img{
+
+  &__img {
     position: absolute;
     height: 461px;
     bottom: 11.4%;
     left: 102%;
+
+    // Monster animation
+
+    // &:hover{
+    //   left: 100%;
+    //   transition: 0.5s;
+    // }
   }
+
   &__content {
     margin-left: 44px;
     margin-top: 65px;
     position: relative;
+
     &-list {
       list-style: none;
     }
+
     &-item {
       margin: 20px 0 0 1px;
     }
+
     &-item>button {
       @include btn;
       padding: 11px 23px;
       margin-top: 1px;
     }
+
     &-title {
       width: 307px;
       font-size: 40px;
@@ -123,6 +147,7 @@
       line-height: 44px;
     }
   }
+
   &__text {
     font-size: 20px;
     font-weight: 400;
@@ -130,6 +155,7 @@
     line-height: 26px;
     margin-top: -11px;
   }
+
   &__additionalInfo {
     position: absolute;
     top: 90.4%;
@@ -149,6 +175,7 @@
   max-width: 1178px;
   margin: auto;
   margin-top: 90px;
+
   &__title {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
@@ -156,6 +183,7 @@
     margin-bottom: 30px;
     font-size: 38px;
   }
+
   &__list {
     list-style: none;
     text-decoration: none;
@@ -164,6 +192,7 @@
     font-size: 26px;
     font-weight: 700;
   }
+
   &__buttons>button {
     position: relative;
     background-color: #70BBDC33;
@@ -171,16 +200,19 @@
     height: 37px;
     width: 37px;
     margin-top: 3px;
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__leftBtn {
     transform: rotate(180deg);
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &__rightBtn {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
@@ -194,17 +226,20 @@
   margin: auto;
   margin-top: 90px;
   display: flex;
+
   &__list {
     list-style: none;
     margin-left: 60px;
     margin-top: 31px;
   }
+
   &__title {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     font-size: 38px;
     padding-left: 60px;
   }
+
   &__btn {
     font-family: 'Crimson Text', Arial, sans-serif;
     font-weight: 400;
@@ -214,6 +249,7 @@
     background-color: transparent;
     padding-left: 60px;
   }
+
   &__active {
     font-family: 'Crimson Text', Arial, sans-serif;
     font-weight: 700;
@@ -223,12 +259,15 @@
     background-color: #70BBDC33;
     padding: 11px 180px 11px 60px;
   }
+
   &__guarantee {
     margin-top: 9px;
   }
+
   &__credit {
     margin-top: 20px;
   }
+
   &__description {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
@@ -236,22 +275,26 @@
     max-width: 530px;
     line-height: 22px;
     padding-left: 60px;
-    &-overflow{
+
+    &-overflow {
       max-height: fit-content;
     }
   }
+
   &__margin {
     margin-top: 31px;
     margin-bottom: 17px;
   }
+
   &__link {
     @include btn;
     padding: 9px 22px;
     margin-left: 60px;
   }
-  &__item{
-    &-link{
-    margin-top: 36px;
+
+  &__item {
+    &-link {
+      margin-top: 36px;
     }
   }
 }
@@ -262,14 +305,17 @@
   margin: auto;
   margin-top: 91px;
   margin-bottom: 90px;
+
   &__title {
     opacity: 0;
     position: absolute;
   }
+
   &__list {
     display: inline-flex;
     list-style: none;
     align-items: center;
+
     &>li {
       margin-right: 127px;
     }
@@ -283,7 +329,8 @@
   display: flex;
   margin-bottom: 155px;
   min-height: fit-content;
-  &__aboutUs{
+
+  &__aboutUs {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -291,6 +338,7 @@
     height: fit-content;
     background-color: #E1F0F7;
     margin-top: 22px;
+
     &-text {
       font-family: 'Open Sans', Arial, sans-serif;
       font-weight: 400;
@@ -301,17 +349,20 @@
       max-height: fit-content;
     }
   }
+
   &__title {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     font-size: 38px;
     margin-top: -24px;
     margin-left: 30px;
+
     &-hidden {
       opacity: 0;
       position: absolute;
     }
   }
+
   &__subtitle {
     font-family: 'Crimson Text', Arial, serif;
     font-weight: 400;
@@ -319,12 +370,14 @@
     margin-left: 30px;
     margin-top: 2px;
   }
+
   &__link {
     @include btn;
     max-width: max-content;
     padding: 11px 22px;
     margin: 11px 0 27px 30px;
   }
+
   &__contacts {
     position: relative;
     max-width: 543px;
@@ -335,6 +388,7 @@
     margin-left: 57px;
     margin-top: 21px;
     background-color: #E1F0F7;
+
     &-text {
       margin-left: 31px;
       font-family: 'Open Sans', Arial, sans-serif;
@@ -344,6 +398,7 @@
       max-width: 483px;
     }
   }
+
   &__map {
     margin: 0 0 -124px 30px;
     padding-top: 11px;

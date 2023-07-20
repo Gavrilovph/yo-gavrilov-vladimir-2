@@ -152,6 +152,7 @@
           text-decoration: none;
         }
         &:hover {
+          transition: 0.3s;
           opacity: 50%;
         }
         &:active {
@@ -164,6 +165,7 @@
         text-decoration: none;
       }
       &:hover {
+        transition: 0.3s;
         opacity: 50%;
       }
       &:active {
@@ -207,6 +209,7 @@
         text-decoration: none;
         &:hover,
         &:active{
+          transition: 0.3s;
           text-decoration: underline;
           color: #FFFFFF;
         }
@@ -228,6 +231,10 @@
         flex-direction: row-reverse;
         overflow: hidden;
       }
+      &-text {
+        color: #C29974;
+        transition: none;
+      }
     }
     &__input {
       position: absolute;
@@ -238,7 +245,7 @@
       top: 0;
       left: 0;
       &:checked,
-      &__input:checked~.&__label {
+      &:checked~.footer__label {
         color: #C29974;
       }
     }
@@ -252,14 +259,15 @@
         display: block;
         transition: color 0.3s ease 0s;
       }
-      &__label:hover,
-      &__label:hover~&__label,
-      &__label:checked~&__label:hover {
+      &:hover,
+      &:hover~&,
+      &:checked~&:hover {
         color: #836E5B;
       }
     }
     /* warning!!! do not change this class! It's connected with JS */
     &__colorHoverJs>p {
+    transition: 0.3s;
     color: #C29974
     }
   }

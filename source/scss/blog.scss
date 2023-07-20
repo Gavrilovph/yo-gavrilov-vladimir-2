@@ -1,27 +1,20 @@
-.current__blog {
-    margin-left: 4px;
-}
-
 .articles {
     max-width: 1178px;
     margin: auto;
     margin-bottom: 57px;
-}
-
-.articles__title {
-    opacity: 0;
-    position: absolute;
-}
-
-.articles__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto 17px;
-    list-style-type: none;
-
-}
-
-.articles__lowRow {
-    margin-top: 33px;
+    &__title {
+        opacity: 0;
+        position: absolute;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto 17px;
+        list-style-type: none;
+    
+    }
+    &__lowRow {
+        margin-top: 33px;
+    }
 }
