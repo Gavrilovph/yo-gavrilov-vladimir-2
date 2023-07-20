@@ -1505,6 +1505,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 .animation__people-man-hand {
   position: absolute;
+  z-index: 0;
   right: 30%;
   bottom: 75%;
   transform: rotate(125deg);
@@ -2382,12 +2383,11 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 .animation__message-woman {
   position: absolute;
   scale: 90%;
-  top: 41%;
+  top: 43%;
   left: 5%;
   -webkit-animation: woman 15s ease-in infinite;
           animation: woman 15s ease-in infinite;
 }
-
 @-webkit-keyframes woman {
   0%, 10% {
     opacity: 0;
@@ -2402,7 +2402,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     opacity: 0;
   }
 }
-
 @keyframes woman {
   0%, 10% {
     opacity: 0;
@@ -2419,12 +2418,12 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 .animation__message-man {
   position: absolute;
-  top: 30%;
+  z-index: 5;
+  top: 35%;
   left: 20%;
   -webkit-animation: man 15s ease-in infinite;
           animation: man 15s ease-in infinite;
 }
-
 @-webkit-keyframes man {
   0%, 40% {
     opacity: 0;
@@ -2439,7 +2438,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     opacity: 0;
   }
 }
-
 @keyframes man {
   0%, 40% {
     opacity: 0;
@@ -2456,12 +2454,11 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 .animation__message-manSecond {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 20%;
   -webkit-animation: manSecond 15s ease-in infinite;
           animation: manSecond 15s ease-in infinite;
 }
-
 @-webkit-keyframes manSecond {
   0%, 88% {
     opacity: 0;
@@ -2476,7 +2473,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     opacity: 0;
   }
 }
-
 @keyframes manSecond {
   0%, 88% {
     opacity: 0;
@@ -2499,7 +2495,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
           animation: driver 15s ease-in infinite;
   z-index: 3;
 }
-
 @-webkit-keyframes driver {
   0% {
     opacity: 0;
@@ -2517,7 +2512,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     opacity: 0;
   }
 }
-
 @keyframes driver {
   0% {
     opacity: 0;
@@ -2543,7 +2537,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   top: 25%;
   left: 23%;
 }
-
 .animation__message-drivertext {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
@@ -2553,7 +2546,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   top: 4%;
   left: 10%;
 }
-
 .animation__message-womantext {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;

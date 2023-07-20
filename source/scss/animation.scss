@@ -75,10 +75,6 @@
             margin-left: 40px;
             padding-top: 10px;
             z-index: 2;
-            // animation-name: carFour;
-            // animation-duration: 10s;
-            // animation-timing-function: ease-in;
-            // animation-iteration-count: infinite;
             animation: carFour 10s ease-in infinite;
         }
     }
@@ -275,6 +271,7 @@
 
             &-hand {
                 position: absolute;
+                z-index: 0;
                 right: 30%;
                 bottom: 75%;
                 transform: rotate(125deg);
