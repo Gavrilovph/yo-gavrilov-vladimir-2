@@ -7,7 +7,7 @@
         gap: 20px;
         width: 1080px;
         list-style-type: none;
-        font-family: 'Montserrat', Arial, sans-serif;
+        font-family: "Montserrat", Arial, sans-serif;
         font-size: 26px;
         font-weight: 700;
     }
@@ -18,7 +18,7 @@
         justify-content: flex-end;
         width: 1080px;
         list-style-type: none;
-        font-family: 'Montserrat', Arial, sans-serif;
+        font-family: "Montserrat", Arial, sans-serif;
         font-size: 26px;
         font-weight: 700;
     }
@@ -30,7 +30,7 @@
         align-items: center;
         width: 280px;
         height: 270px;
-        &>a {
+        & > a {
             max-width: 200px;
             z-index: 1;
             position: absolute;
@@ -38,22 +38,22 @@
         }
     }
     &__apparel {
-        background-color: #DBE4DB;
+        background-color: #dbe4db;
     }
     &__holiday {
-        background-color: #EADDD3;
+        background-color: #eaddd3;
     }
     &__toys {
-        background-color: #F8F2DA;
+        background-color: #f8f2da;
     }
     &__accesories {
-        background-color: #D5D4E1;
+        background-color: #d5d4e1;
     }
     &__sale {
-        background-color: #F3D0DB;
+        background-color: #f3d0db;
     }
     &__adults {
-        background-color: #E5EAF8;
+        background-color: #e5eaf8;
     }
     &__link {
         color: #ffffff;
@@ -70,13 +70,13 @@
         text-align: center;
     }
     &__title {
-        font-family: 'Montserrat', Arial, sans-serif;
+        font-family: "Montserrat", Arial, sans-serif;
         font-size: 38px;
         font-weight: 700;
         text-transform: uppercase;
     }
-    &__discription{
-        &-owerflow{
+    &__discription {
+        &-owerflow {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -85,11 +85,10 @@
         }
     }
     &__text {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-    
     }
     &__textblock {
         max-width: 680px;

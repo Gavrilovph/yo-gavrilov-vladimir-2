@@ -8,17 +8,17 @@
         width: 680px;
         display: flex;
         flex-direction: column;
-        background-color: #E5EAF8;
+        background-color: #e5eaf8;
         padding: 48px 44px;
         gap: 20px;
     }
     &__label {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
     }
-    &__container{
+    &__container {
         &-data {
             display: flex;
             align-items: center;
@@ -33,7 +33,7 @@
             gap: 5px;
         }
         &-tel,
-        &-email{
+        &-email {
             width: 100%;
         }
         &-email {
@@ -54,11 +54,11 @@
         margin-top: -2px;
     }
     &__input {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
         font-size: 18px;
         padding-left: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.20);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         &-checkbox {
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -68,16 +68,16 @@
             height: 19px;
             z-index: 1;
             cursor: pointer;
-            &:hover~.section__description-label {
+            &:hover ~ .section__description-label {
                 text-decoration: underline;
             }
-            &:checked+.section__span {
+            &:checked + .section__span {
                 background-image: url(../img/contactUS/checkboxchecked.svg);
             }
-            &:disabled+.section__span {
+            &:disabled + .section__span {
                 background-image: url(../img/contactUS/checkdisabled.svg);
             }
-            &:disabled~.section__description-label {
+            &:disabled ~ .section__description-label {
                 color: #908484;
             }
         }
@@ -92,21 +92,21 @@
         font-size: 18px;
         color: #000000;
     }
-    &__textaria{
-        font-family: 'Open Sans', Arial, sans-serif;
+    &__textaria {
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
         height: 140px;
         width: 590px;
         padding: 15px 20px 0;
-        border: 1px solid rgba(0, 0, 0, 0.20);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         resize: none;
         outline: none;
         &:hover,
         &:active,
-        &:focus{
-            border-color: #C29974;
+        &:focus {
+            border-color: #c29974;
         }
     }
     &__span {
@@ -115,13 +115,13 @@
         position: absolute;
         background-image: url(../img/contactUS/checkbox.svg);
     }
-    &__description{
+    &__description {
         &-label {
             margin-left: 35px;
         }
     }
     &__list {
-        font-family: 'Open Sans', Arial, sans-serif;
+        font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
@@ -130,13 +130,13 @@
         gap: 20px;
         list-style-type: none;
     }
-    &__item{
+    &__item {
         &-shout {
-            font-family: 'Montserrat', Arial, sans-serif;
+            font-family: "Montserrat", Arial, sans-serif;
             font-weight: 600;
             font-size: 26px;
             line-height: 34px;
-            color: #C29974;
+            color: #c29974;
             text-transform: uppercase;
         }
     }

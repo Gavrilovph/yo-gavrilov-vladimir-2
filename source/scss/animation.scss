@@ -7,7 +7,6 @@
         z-index: 1;
         max-width: 100%;
 
-
         &-sky {
             position: absolute;
             z-index: 2;
@@ -25,7 +24,6 @@
             100% {
                 right: -40%;
             }
-
         }
     }
 
@@ -84,7 +82,6 @@
         list-style-type: none;
         display: flex;
         gap: 90px;
-
     }
 
     // keyframes for cars
@@ -129,7 +126,6 @@
         }
     }
 
-
     &__lanterns {
         position: absolute;
         top: 20%;
@@ -146,7 +142,6 @@
     }
 
     @keyframes taxi {
-
         0%,
         30% {
             left: 94%;
@@ -237,9 +232,7 @@
                 animation: womanHand 15s ease-in-out infinite;
             }
 
-
             @keyframes womanHand {
-
                 0%,
                 10% {
                     transform: rotate(0);
@@ -262,7 +255,6 @@
                     transform-origin: 0 0 0;
                 }
             }
-
         }
 
         &-man {
@@ -280,7 +272,6 @@
             }
 
             @keyframes manHand {
-
                 0%,
                 35% {
                     transform: rotate(125deg);
@@ -303,7 +294,6 @@
                     transform-origin: bottom left;
                 }
             }
-
         }
     }
 }

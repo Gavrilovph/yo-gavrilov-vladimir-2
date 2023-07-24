@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" class="no-js">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
@@ -11,8 +11,8 @@
     <meta name="keywords" content="">
 
     <script>
-      var docElement = document.documentElement;
-      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
 
     <!-- Favicon -->
@@ -20,168 +20,170 @@
     <!-- build:css -->
     <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
-  </head>
-  <body>
-  @@include('./blocks/header.html')
-      @@include('./blocks/crumps.html',{
-        'title':"Toy for kids",
-        'text':"Toys",
-        'class':"nav__item",
-        'pretext':"Catalog",
-        'link':"./catalog.html",
+</head>
+
+<body>
+    @@include('./blocks/header.html')
+    @@include('./blocks/crumps.html',{
+    'title':"Toy for kids",
+    'text':"Toys",
+    'class':"nav__item",
+    'pretext':"Catalog",
+    'link':"./catalog.html",
     })
-  <form class="filter">
-      <div class="filter__range">
-          <p class="filter__text filter__cost-text">Cost</p>
-          <input class="styled-slider slider-progress" type="range" min="0" max="500" step="10" value="100"
-              name="name" id="slider">
-          <div class="filter__value-container">
-              <span class="filter__value-left">0</span>
-              <span class="filter__value-right">500</span>
-          </div>
-      </div>
-      <div class="filter__chekbox">
-          <p class="filter__text">Color</p>
-          <ul class="filter__list filter__boxList">
-              <li class="filter__item">
-                  <label class="filter__lable" for="Black">
-                      <input class="filter__input-checkbox check__input" type="checkbox" id="Black">
-                      <span class="filter__span-color"></span>
-                      Black
-                  </label>
-              </li>
-              <li class="filter__item">
-                  <label class="filter__lable" for="Blue">
-                      <input class="filter__input-checkbox check__input" type="checkbox" id="Blue">
-                      <span class="filter__span-color"></span>
-                      Blue
-                  </label>
-              </li>
-              <li class="filter__item">
-                  <label class="filter__lable" for="Green">
-                      <input class="filter__input-checkbox check__input" type="checkbox" id="Green">
-                      <span class="filter__span-color"></span>
-                      Green
-                  </label>
-              </li>
-              <li class="filter__item">
-                  <label class="filter__lable" for="White">
-                      <input class="filter__input-checkbox check__input" type="checkbox" id="White">
-                      <span class="filter__span-color"></span>
-                      White
-                  </label>
-              </li>
-          </ul>
-      </div>
-      <div class="filter__radio filter__delivery">
-          <p class="filter__text filter__text-delivery">Delivery</p>
-          <ul class="filter__list radio__list">
-              <li class="filter__item">
-                  <label class="filter__label radio__label" for="freeshiping">
-                      <input class="filter__input radio__input" type="radio" id="freeshiping" name="a">
-                      <span class="filter__span radio"></span>
-                      Free shipping
-                  </label>
-              </li>
-              <li class="filter__item">
-                  <label class="filter__label radio__label" for="fastshiping">
-                      <input class="filter__input radio__input" type="radio" id="fastshiping" name="a">
-                      <span class="filter__span radio"></span>
-                      Fast shipping
-                  </label>
-              </li>
-          </ul>
-      </div>
-      <div class="filter__radio filter__radio-amount">
-          <p class="filter__text">Amount</p>
-          <ul class="filter__list amount__list">
-              <li class="filter__item-amount amount__item">
-                  <label class="filter__label amount__label" for="0-5">
-                      <input class="filter__input amount__input" type="radio" id="0-5" name="b">
-                      <span class="filter__span amount"></span>
-                  </label>
-                  <p class="filter__description-text amount__description amount__first">0-5</p>
-              </li>
-              <li class="filter__item-amount amount__item">
-                  <label class="filter__label amount__label" for="10-20">
-                      <input class="filter__input amount__input" type="radio" id="10-20" name="b">
-                      <span class="filter__span amount"></span>
-                  </label>
-                  <p class="filter__description-text amount__description">10-20</p>
-              </li>
-              <li class="filter__item-amount amount__item">
-                  <label class="filter__label amount__label" for="20-50">
-                      <input class="filter__input amount__input" type="radio" id="20-50" name="b">
-                      <span class="filter__span amount"></span>
-                  </label>
-                  <p class="filter__description-text amount__description">20-50</p>
-              </li>
-          </ul>
-      </div>
-      <button class="filter__button" type="button">
-          Apply
-      </button>
-  </form>
-  <section class="goods">
-      <h2 class="goods__title">goods</h2>
-      <ul class="goods__list">
-          <li class="goods__item">
-              <img class="goods__img" src="./img/toys/Sharky.png" width="380" height="385" alt="product image">
-              <a class="goods__link goods__product-link" href="#">Learn more</a>
-              <p class="goods__description">SHARKY BEAN BAG CHAIR COVER</p>
-              <p class="goods__price">$60.00 USD</p>
-          </li>
-          <li class="goods__item">
-              <div class="goods__container">
+
+    <form class="filter">
+        <div class="filter__range">
+            <p class="filter__text filter__cost-text">Cost</p>
+            <input class="styled-slider slider-progress" type="range" min="0" max="500" step="10" value="100"
+                name="name" id="slider">
+            <div class="filter__value-container">
+                <span class="filter__value-left">0</span>
+                <span class="filter__value-right">500</span>
+            </div>
+        </div>
+        <div class="filter__chekbox">
+            <p class="filter__text">Color</p>
+            <ul class="filter__list filter__boxList">
+                <li class="filter__item">
+                    <label class="filter__lable" for="Black">
+                        <input class="filter__input-checkbox check__input" type="checkbox" id="Black">
+                        <span class="filter__span-color"></span>
+                        Black
+                    </label>
+                </li>
+                <li class="filter__item">
+                    <label class="filter__lable" for="Blue">
+                        <input class="filter__input-checkbox check__input" type="checkbox" id="Blue">
+                        <span class="filter__span-color"></span>
+                        Blue
+                    </label>
+                </li>
+                <li class="filter__item">
+                    <label class="filter__lable" for="Green">
+                        <input class="filter__input-checkbox check__input" type="checkbox" id="Green">
+                        <span class="filter__span-color"></span>
+                        Green
+                    </label>
+                </li>
+                <li class="filter__item">
+                    <label class="filter__lable" for="White">
+                        <input class="filter__input-checkbox check__input" type="checkbox" id="White">
+                        <span class="filter__span-color"></span>
+                        White
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="filter__radio filter__delivery">
+            <p class="filter__text filter__text-delivery">Delivery</p>
+            <ul class="filter__list radio__list">
+                <li class="filter__item">
+                    <label class="filter__label radio__label" for="freeshiping">
+                        <input class="filter__input radio__input" type="radio" id="freeshiping" name="a">
+                        <span class="filter__span radio"></span>
+                        Free shipping
+                    </label>
+                </li>
+                <li class="filter__item">
+                    <label class="filter__label radio__label" for="fastshiping">
+                        <input class="filter__input radio__input" type="radio" id="fastshiping" name="a">
+                        <span class="filter__span radio"></span>
+                        Fast shipping
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="filter__radio filter__radio-amount">
+            <p class="filter__text">Amount</p>
+            <ul class="filter__list amount__list">
+                <li class="filter__item-amount amount__item">
+                    <label class="filter__label amount__label" for="0-5">
+                        <input class="filter__input amount__input" type="radio" id="0-5" name="b">
+                        <span class="filter__span amount"></span>
+                    </label>
+                    <p class="filter__description-text amount__description amount__first">0-5</p>
+                </li>
+                <li class="filter__item-amount amount__item">
+                    <label class="filter__label amount__label" for="10-20">
+                        <input class="filter__input amount__input" type="radio" id="10-20" name="b">
+                        <span class="filter__span amount"></span>
+                    </label>
+                    <p class="filter__description-text amount__description">10-20</p>
+                </li>
+                <li class="filter__item-amount amount__item">
+                    <label class="filter__label amount__label" for="20-50">
+                        <input class="filter__input amount__input" type="radio" id="20-50" name="b">
+                        <span class="filter__span amount"></span>
+                    </label>
+                    <p class="filter__description-text amount__description">20-50</p>
+                </li>
+            </ul>
+        </div>
+        <button class="filter__button" type="button">
+            Apply
+        </button>
+    </form>
+    <section class="goods">
+        <h2 class="goods__title">goods</h2>
+        <ul class="goods__list">
+            <li class="goods__item">
+                <img class="goods__img" src="./img/toys/Sharky.png" width="380" height="385" alt="product image">
+                <a class="goods__link goods__product-link" href="#">Learn more</a>
+                <p class="goods__description">SHARKY BEAN BAG CHAIR COVER</p>
+                <p class="goods__price">$60.00 USD</p>
+            </li>
+            <li class="goods__item">
+                <div class="goods__container">
                   <img class="goods__img" src="./img/toys/Brass.png" width="380" height="385"
                       alt="product image">
-                  <a class="goods__link goods__product-link" href="#">Learn more</a>
-                  <p class="goods__description">BRASS DECO FRAMES</p>
-                  <p class="goods__price">$66.00 USD</p>
-              </div>
-          </li>
-          <li class="goods__item">
-              <div class="goods__container">
+                    <a class="goods__link goods__product-link" href="#">Learn more</a>
+                    <p class="goods__description">BRASS DECO FRAMES</p>
+                    <p class="goods__price">$66.00 USD</p>
+                </div>
+            </li>
+            <li class="goods__item">
+                <div class="goods__container">
                   <img class="goods__img" src="./img/toys/Cibo.png" width="380" height="385"
                       alt="product image">
-                  <a class="goods__link goods__product-link" href="#">Learn more</a>
-                  <p class="goods__description">CIBO FULL APRON</p>
-                  <p class="goods__price">$60.00 USD</p>
-              </div>
-          </li>
-          <li class="goods__item goods__item-low">
-              <div class="goods__container">
+                    <a class="goods__link goods__product-link" href="#">Learn more</a>
+                    <p class="goods__description">CIBO FULL APRON</p>
+                    <p class="goods__price">$60.00 USD</p>
+                </div>
+            </li>
+            <li class="goods__item goods__item-low">
+                <div class="goods__container">
                   <img class="goods__img" src="./img/toys/Gatcha.png" width="380" height="385"
                       alt="product image">
-                  <a class="goods__link goods__product-link" href="#">Learn more</a>
-                  <p class="goods__description">GATCHA GATCHA GUMBALL MACHINE</p>
-                  <p class="goods__price goods__price-lowRow">$56.00 USD</p>
-              </div>
-          </li>
-          <li class="goods__item goods__item-low">
-              <div class="goods__container">
-                  <img class="goods__img" src="./img/toys/Christmass.png" width="380" height="385"
-                      alt="product image">
-                  <a class="goods__link goods__product-link" href="#">Learn more</a>
-                  <p class="goods__description">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                  <p class="goods__price goods__price-lowRow">$29.00 USD</p>
-              </div>
-          </li>
-          <li class="goods__item goods__item-low">
-              <div class="goods__container">
+                    <a class="goods__link goods__product-link" href="#">Learn more</a>
+                    <p class="goods__description">GATCHA GATCHA GUMBALL MACHINE</p>
+                    <p class="goods__price goods__price-lowRow">$56.00 USD</p>
+                </div>
+            </li>
+            <li class="goods__item goods__item-low">
+                <div class="goods__container">
+                    <img class="goods__img" src="./img/toys/Christmass.png" width="380" height="385"
+                        alt="product image">
+                    <a class="goods__link goods__product-link" href="#">Learn more</a>
+                    <p class="goods__description">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                    <p class="goods__price goods__price-lowRow">$29.00 USD</p>
+                </div>
+            </li>
+            <li class="goods__item goods__item-low">
+                <div class="goods__container">
                   <img class="goods__img" src="./img/toys/Tangle.png" width="380" height="385"
                       alt="product image">
-                  <a class="goods__link goods__product-link" href="#">Learn more</a>
-                  <p class="goods__description">TANGLE SPINNING TEA LIGHT</p>
-                  <p class="goods__price goods__price-lowRow">$56.00 USD</p>
-              </div>
-          </li>
-      </ul>
-      @@include('./blocks/pagination__pages.html')
-  </section>
-  @@include('./blocks/footer.html')
-  <script src="../js/range-inputmin.js"></script>
-  <script src="/js/raitingmin.js"></script>
+                    <a class="goods__link goods__product-link" href="#">Learn more</a>
+                    <p class="goods__description">TANGLE SPINNING TEA LIGHT</p>
+                    <p class="goods__price goods__price-lowRow">$56.00 USD</p>
+                </div>
+            </li>
+        </ul>
+        @@include('./blocks/pagination__pages.html')
+    </section>
+    @@include('./blocks/footer.html')
+    <script src="../js/range-inputmin.js"></script>
+    <script src="/js/raitingmin.js"></script>
     <script src="js/app.js" defer></script>
-  </body>
+</body>
 </html>

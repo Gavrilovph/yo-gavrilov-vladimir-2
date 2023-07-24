@@ -1,0 +1,16 @@
+.starsvg {
+    width: 100px;
+    max-height: 50px;
+    scale: 60%;
+
+    &:hover,
+    &:hover~& {
+        transition: 0.5s;
+        fill: #836E5B;
+    }
+}
+
+
+
+
+
