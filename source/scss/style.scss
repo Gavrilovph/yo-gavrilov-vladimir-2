@@ -33,7 +33,8 @@
 @import "_blocks/crumps";
 @import "_blocks/modal";
 @import "_blocks/animation__message";
-@import "_blocks/star.scss";
+@import "_blocks/star";
+@import "_blocks/mobile__menu";
 
 
 
@@ -72,7 +73,7 @@
     margin-top: 17px;
     margin-left: 30px;
     @media screen and (max-width: 865px) {
-      margin-left: -29px;
+      margin-left: 0;
     }
     @media screen and (max-width: 766px) {
       order: 2;
@@ -179,6 +180,7 @@
   }
 
   &__content {
+    max-width: 276px;
     margin-left: 44px;
     margin-top: 65px;
     @media screen and (max-width: 865px) {
@@ -253,7 +255,7 @@
       line-height: 17px;
       color: #FFFFFF;
       text-transform: uppercase;
-      margin: 11px 20px;
+      margin: 13px 20px;
       text-align: center;
     }
   }

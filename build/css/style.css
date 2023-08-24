@@ -2065,13 +2065,14 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 
 .header {
+  z-index: 3;
   display: flex;
   align-items: center;
   max-width: 1178px;
   margin: 50px auto 62px;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header {
     margin: 20px auto 62px;
   }
@@ -2084,7 +2085,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 .header__menu {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header__menu {
     display: flex;
     justify-content: center;
@@ -2100,7 +2101,23 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  margin-left: -40px;
+  margin-left: -50px;
+}
+.header__menu-btn:hover {
+  transition: 0.3s;
+  opacity: 50%;
+}
+.header__menu-btn:active {
+  transition: 0.3s;
+  opacity: 20%;
+}
+@media screen and (max-width: 610px) {
+  .header__menu-btn {
+    margin-left: -40px;
+  }
+}
+.header__menu-hide {
+  display: none;
 }
 .header__leftblock {
   display: flex;
@@ -2115,7 +2132,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   background-image: url(../img/LOGO.svg);
   margin-left: -2px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header__link-index {
     background-image: url(../img/LOGOtablet.svg);
     margin-left: -18px;
@@ -2135,7 +2152,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   transition: 0.3s;
   opacity: 20%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header__nav {
     display: none;
   }
@@ -2215,7 +2232,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 .header__row-item > a {
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header__row-contactus {
     display: none;
   }
@@ -2229,7 +2246,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   margin-right: -1px;
   background-image: url(../img/search.svg);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
   .header__search-icon {
     margin-right: -7px;
   }
@@ -3261,6 +3278,100 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   fill: #836E5B;
 }
 
+.hideMobileMenu {
+  display: none;
+}
+
+.menu {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(125, 151, 218, 0.8);
+  top: 94px;
+}
+@media screen and (max-width: 610px) {
+  .menu {
+    top: 74px;
+  }
+}
+.menu__nav {
+  display: flex;
+  justify-content: center;
+  width: 375px;
+  height: 339px;
+  background-color: #FFFFFF;
+  -webkit-animation: menu 0.5s ease-in-out;
+          animation: menu 0.5s ease-in-out;
+}
+@-webkit-keyframes menu {
+  0% {
+    margin-top: -400px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes menu {
+  0% {
+    margin-top: -400px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 30px;
+}
+.menu__nav-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1E0606;
+}
+.menu__nav-link:hover {
+  transition: 0.3s;
+  opacity: 50%;
+}
+.menu__nav-link:active {
+  transition: 0.3s;
+  opacity: 20%;
+}
+.menu__nav-contactUs {
+  margin-top: 30px;
+  font-weight: 700;
+}
+.menu__close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/menuCloseBtn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -55px;
+  border: none;
+}
+.menu__close:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+.menu__close:active {
+  opacity: 40%;
+}
+@media screen and (max-width: 610px) {
+  .menu__close {
+    top: -45px;
+  }
+}
+
 /*
   Ниже пример подключения других блоков
 
@@ -3303,7 +3414,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 @media screen and (max-width: 865px) {
   .banner__slider {
-    margin-left: -29px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 766px) {
@@ -3409,6 +3520,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   }
 }
 .banner__content {
+  max-width: 276px;
   margin-left: 44px;
   margin-top: 65px;
 }
@@ -3510,7 +3622,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   line-height: 17px;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 11px 20px;
+  margin: 13px 20px;
   text-align: center;
 }
 
