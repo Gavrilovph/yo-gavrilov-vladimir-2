@@ -32,99 +32,102 @@
     'link':"./catalog.html",
     })
 
-    <form class="filter">
-        <div class="filter__range">
-            <p class="filter__text filter__cost-text">Cost</p>
-            <input class="styled-slider slider-progress" type="range" min="0" max="500" step="10" value="100"
-                name="name" id="slider">
-            <div class="filter__value-container">
-                <span class="filter__value-left">0</span>
-                <span class="filter__value-right">500</span>
+    <section class="filter">
+        <h2 class="filter__title">Filtre title</h2>
+        <form class="filter__form container">
+            <div class="filter__range ">
+                <p class="filter__text filter__cost-text">Cost</p>
+                <input class="styled-slider slider-progress" type="range" min="0" max="500" step="10" value="100"
+                    name="name" id="slider">
+                <div class="filter__value-container">
+                    <span class="filter__value-left">0</span>
+                    <span class="filter__value-right">500</span>
+                </div>
             </div>
-        </div>
-        <div class="filter__chekbox">
-            <p class="filter__text">Color</p>
-            <ul class="filter__list filter__boxList">
-                <li class="filter__item">
-                    <label class="filter__lable" for="Black">
-                        <input class="filter__input-checkbox check__input" type="checkbox" id="Black">
-                        <span class="filter__span-color"></span>
-                        Black
-                    </label>
-                </li>
-                <li class="filter__item">
-                    <label class="filter__lable" for="Blue">
-                        <input class="filter__input-checkbox check__input" type="checkbox" id="Blue">
-                        <span class="filter__span-color"></span>
-                        Blue
-                    </label>
-                </li>
-                <li class="filter__item">
-                    <label class="filter__lable" for="Green">
-                        <input class="filter__input-checkbox check__input" type="checkbox" id="Green">
-                        <span class="filter__span-color"></span>
-                        Green
-                    </label>
-                </li>
-                <li class="filter__item">
-                    <label class="filter__lable" for="White">
-                        <input class="filter__input-checkbox check__input" type="checkbox" id="White">
-                        <span class="filter__span-color"></span>
-                        White
-                    </label>
-                </li>
-            </ul>
-        </div>
-        <div class="filter__radio filter__delivery">
-            <p class="filter__text filter__text-delivery">Delivery</p>
-            <ul class="filter__list radio__list">
-                <li class="filter__item">
-                    <label class="filter__label radio__label" for="freeshiping">
-                        <input class="filter__input radio__input" type="radio" id="freeshiping" name="a">
-                        <span class="filter__span radio"></span>
-                        Free shipping
-                    </label>
-                </li>
-                <li class="filter__item">
-                    <label class="filter__label radio__label" for="fastshiping">
-                        <input class="filter__input radio__input" type="radio" id="fastshiping" name="a">
-                        <span class="filter__span radio"></span>
-                        Fast shipping
-                    </label>
-                </li>
-            </ul>
-        </div>
-        <div class="filter__radio filter__radio-amount">
-            <p class="filter__text">Amount</p>
-            <ul class="filter__list amount__list">
-                <li class="filter__item-amount amount__item">
-                    <label class="filter__label amount__label" for="0-5">
-                        <input class="filter__input amount__input" type="radio" id="0-5" name="b">
-                        <span class="filter__span amount"></span>
-                    </label>
-                    <p class="filter__description-text amount__description amount__first">0-5</p>
-                </li>
-                <li class="filter__item-amount amount__item">
-                    <label class="filter__label amount__label" for="10-20">
-                        <input class="filter__input amount__input" type="radio" id="10-20" name="b">
-                        <span class="filter__span amount"></span>
-                    </label>
-                    <p class="filter__description-text amount__description">10-20</p>
-                </li>
-                <li class="filter__item-amount amount__item">
-                    <label class="filter__label amount__label" for="20-50">
-                        <input class="filter__input amount__input" type="radio" id="20-50" name="b">
-                        <span class="filter__span amount"></span>
-                    </label>
-                    <p class="filter__description-text amount__description">20-50</p>
-                </li>
-            </ul>
-        </div>
-        <button class="filter__button" type="button">
-            Apply
-        </button>
-    </form>
-    <section class="goods">
+            <div class="filter__chekbox">
+                <p class="filter__text">Color</p>
+                <ul class="filter__list filter__boxList">
+                    <li class="filter__item">
+                        <label class="filter__lable" for="Black">
+                            <input class="filter__input-checkbox check__input" type="checkbox" id="Black">
+                            <span class="filter__span-color"></span>
+                            Black
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__lable" for="Blue">
+                            <input class="filter__input-checkbox check__input" type="checkbox" id="Blue">
+                            <span class="filter__span-color"></span>
+                            Blue
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__lable" for="Green">
+                            <input class="filter__input-checkbox check__input" type="checkbox" id="Green">
+                            <span class="filter__span-color"></span>
+                            Green
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__lable" for="White">
+                            <input class="filter__input-checkbox check__input" type="checkbox" id="White">
+                            <span class="filter__span-color"></span>
+                            White
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter__radio filter__delivery">
+                <p class="filter__text filter__text-delivery">Delivery</p>
+                <ul class="filter__list radio__list">
+                    <li class="filter__item">
+                        <label class="filter__label radio__label" for="freeshiping">
+                            <input class="filter__input radio__input" type="radio" id="freeshiping" name="a">
+                            <span class="filter__span radio"></span>
+                            Free shipping
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__label radio__label" for="fastshiping">
+                            <input class="filter__input radio__input" type="radio" id="fastshiping" name="a">
+                            <span class="filter__span radio"></span>
+                            Fast shipping
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter__radio filter__radio-amount">
+                <p class="filter__text">Amount</p>
+                <ul class="filter__list amount__list">
+                    <li class="filter__item-amount amount__item">
+                        <label class="filter__label amount__label" for="0-5">
+                            <input class="filter__input amount__input" type="radio" id="0-5" name="b">
+                            <span class="filter__span amount"></span>
+                        </label>
+                        <p class="filter__description-text amount__description amount__first">0-5</p>
+                    </li>
+                    <li class="filter__item-amount amount__item">
+                        <label class="filter__label amount__label" for="10-20">
+                            <input class="filter__input amount__input" type="radio" id="10-20" name="b">
+                            <span class="filter__span amount"></span>
+                        </label>
+                        <p class="filter__description-text amount__description">10-20</p>
+                    </li>
+                    <li class="filter__item-amount amount__item">
+                        <label class="filter__label amount__label" for="20-50">
+                            <input class="filter__input amount__input" type="radio" id="20-50" name="b">
+                            <span class="filter__span amount"></span>
+                        </label>
+                        <p class="filter__description-text amount__description">20-50</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="filter__button" type="button">
+                Apply
+            </button>
+        </form>
+    </section>
+    <section class="goods container">
         <h2 class="goods__title">goods</h2>
         <ul class="goods__list">
             <li class="goods__item">

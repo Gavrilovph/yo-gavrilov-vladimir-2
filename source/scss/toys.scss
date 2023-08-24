@@ -1,12 +1,16 @@
 .filter {
-    display: flex;
-    justify-content: center;
-    gap: 96px;
-    margin: 50px auto;
     background-color: #7d97da33;
-    padding: 42px 110px 45px;
-    margin-top: 51px;
-    margin-left: -86px;
+    &__title{
+        display: none;
+    }
+    &__form{
+        display: flex;
+        gap: 96px;
+        margin: 50px auto;
+        padding: 42px 0px 45px;
+        margin-top: 51px;
+        margin-left: -86px;
+    }
     &__button {
         @include btn;
         line-height: 22px;
@@ -314,7 +318,7 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
 .amount {
     position: absolute;
     width: 80px;
-    height: 35px;
+    height: 37px;
     margin-left: -80px;
     margin-top: -18px;
 

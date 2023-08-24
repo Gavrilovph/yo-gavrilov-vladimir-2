@@ -1,5 +1,7 @@
 .container {
-    position: relative;
-    margin: auto;
     max-width: 1180px;
+    margin: 0 auto;
+    @media screen {
+        padding: 0 10px;
+    }
 }

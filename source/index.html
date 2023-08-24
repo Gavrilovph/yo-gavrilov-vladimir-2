@@ -23,7 +23,7 @@
 </head>
 <body>
     @@include('./blocks/header.html')
-    <main>
+    <main class="container">
         <section class="banner">
             <div class="banner__slider">
                 <p class="banner__slider-number">01</p> <!--slide nunmber-->
@@ -44,8 +44,6 @@
                 </ul>
             </div>
             <div class="banner__content">
-                <img class="banner__img" src="./img/MainImage.png" width="636" height="462"
-                    alt="image of monster in main">
                 <ul class="banner__content-list">
                     <li class="banner__content-item">
                         <h1 class="banner__content-title">THE OOH NOO COLLECTION</h1>
@@ -59,10 +57,16 @@
                     <li class="banner__content-item"></li>
                 </ul>
             </div>
-            <p class="banner__additionalInfo">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            <div class="banner__wrapper">
+                <img class="banner__img" src="./img/MainImage.png" 
+                        alt="image of monster in main">
+            </div>
+            <div class="banner__additional-info">
+                <p class="banner__additional-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            </div>
         </section>
     </main>
-    <section class="slider">
+    <section class="slider container">
         <h2 class="slider__title">CATEGORY PRODUCTS</h2>
         <ul class="slider__list">
             @@include('./blocks/slider__item.html', {
@@ -97,8 +101,8 @@
                 from fashion to furniture for kids and adults.</p>
         </div>
     </section>
-    <section class="features">
-        <img class="features__img" src="./img/DeliveryImage.jpg" width="480" height="559" alt="image of a woman">
+    <section class="features container">
+        <img class="features__img" src="../img/DeliveryImage.jpg" alt="image of a woman">
         <ul class="features__list">
             <li class="features__item">
                 <h3 class="features__title">DELIVERY</h3>
@@ -125,11 +129,10 @@
             </li>
         </ul>
     </section>
-    <section class="sponsors">
+    <section class="sponsors container">
         <h2 class="sponsors__title">Partners</h2>
         <ul class="sponsors__list">
-          <li class="sponsors__item"><img class="sponsors__img" src="./img/sponsors/Mail.png" width="193"
-                  height="60" alt="logo of mail">
+          <li class="sponsors__item"><img class="sponsors__img" src="./img/sponsors/Mail.png"  alt="logo of mail">
             </li>
           <li class="sponsors__item"><img class="sponsors__img" src="./img/sponsors/Apple.png" width="179"
                   height="61" alt="logo of apple">
@@ -142,9 +145,9 @@
             </li>
         </ul>
     </section>
-    <section class="info">
+    <section class="info container">
         <h2 class="info__title-hidden">About Us</h2>
-        <article class="info__aboutUs">
+        <article class="info__aboutUs info__article">
             <h2 class="info__title">DESIGN LIFE KIDS</h2>
             <p class="info__subtitle">About Us</p>
             <p class="info__text info__aboutUs-text">Some days i feel like i've been working on dlk my entire life and
@@ -152,14 +155,14 @@
             </p>
             <a class="info__link" href="#">BUY NOW</a> <!--link to catalog-->
         </article>
-        <article class="info__contacts">
+        <article class="info__contacts info__article">
             <h2 class="info__title">CONTACTS</h2>
             <p class="info__text info__contacts-text">Some days i feel like i've been working on dlk my entire life and
                 there are other days that i am completely shocked that four years have flown by. It's simply magical.
             </p>
             <iframe class="info__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.6900804752245!2d49.28962379124187!3d53.5124506904755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sen!2sru!4v1683368862385!5m2!1sen!2sru"
-                width="483" height="208" style="border:0;" allowfullscreen="" loading="lazy"
+                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
     </section>

@@ -2,10 +2,35 @@
     display: flex;
     align-items: center;
     max-width: 1178px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 62px;
+    margin: 50px auto 62px;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      margin: 20px auto 62px;
+    }
+
+    @media screen and (max-width: 610px) {
+      margin: 10px auto 52px;
+    }
+    &__menu{
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+      }
+      &-btn{
+      font-family: "Open Sans";
+      color: #1E0606;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      margin-left: -40px;
+      }
+    }
     &__leftblock {
       display: flex;
       align-items: center;
@@ -19,6 +44,14 @@
         width: 100px;
         background-image: url(../img/LOGO.svg);
         margin-left: -2px;
+        @media screen and (max-width: 768px) {
+          background-image: url(../img/LOGOtablet.svg);
+          margin-left: -18px;
+        }
+        @media screen and (max-width: 610px) {
+          background-image: url(../img/LOGOmobile.svg);
+          margin-left: -28px;
+        }
         &:hover {
           transition: 0.3s;
           opacity: 50%;
@@ -30,11 +63,20 @@
       }
     }
     &__nav{
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       &-list {
         display: flex;
         font-size: 14px;
         line-height: 19px;
         margin-left: 50px;
+        @media screen and (max-width: 836px) {
+          justify-content: center;
+          margin: 0;
+          gap: 9px;
+
+        }
       }
       &-item {
         margin: 10px;
@@ -43,6 +85,9 @@
         list-style-type: none;
         color: #1E0606;
         white-space: nowrap;
+        @media screen and (max-width: 836px) {
+          margin: 10px 5px;
+        }
         &>a:visited {
           color: #1E0606
         }
@@ -95,6 +140,11 @@
           text-decoration: none;
         }
       }
+      &-contactus{
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
     }
     &__search{
       &-icon {
@@ -105,6 +155,12 @@
         width: 30px;
         margin-right: -1px;
         background-image: url(../img/search.svg);
+        @media screen and (max-width: 768px) {
+          margin-right: -7px;
+        }
+        @media screen and (max-width: 610px) {
+          background-image: url(../img/searchmobile.svg);
+        }
         &:hover {
           transition: 0.3s;
           opacity: 50%;
