@@ -22,48 +22,56 @@
     <!-- endbuild -->
   </head>
   <body>
-    @@include('./blocks/header.html')
+    @@include('./blocks/header.html',{
+      'mainClass':"headerCatalog",
+    })
+
     @@include('./blocks/crumps.html',{
-        'title':"Catalog",
+        'title':"Category products",
         'text':"Catalog",
         'class':"nav__hidden",
+        'mainClass':"navCatalog", 
     })
     <section class="catalog container">
-        <ul class="catalog__upperlist">
-            <li class="catalog__item catalog__apparel">
-                <a class="catalog__link" href="#">APPAREL KIDS</a>
-                <img class="catalog__img" src="./img/category/sweater.png" width="244" height="177"
-                    alt="images of apparel kids category">
-            </li>
-            <li class="catalog__item catalog__holiday">
-                <a class="catalog__link " href="#">HOLIDAY SHOP</a>
-                <img class="catalog__img" src="./img/category/soxs.png" width="208" height="244"
-                    alt="images of apparel kids category">
-            </li>
-            <li class="catalog__item catalog__toys">
-                <a class="catalog__link" href="./toys.html">TOYS</a>
-                <img class="catalog__img" src="./img/category/deer.png" width="270" height="270"
-                    alt="images of apparel kids category">
-            </li>
-        </ul>
-        <ul class="catalog__lowerlist">
-            <li class="catalog__item catalog__accesories">
-                <a class="catalog__link" href="#">ACCESSORIES</a>
-                <img class="catalog__img" src="./img/category/eti.png" width="240" height="250"
-                    alt="images of apparel kids category">
-            </li>
-            <li class="catalog__item catalog__sale">
-                <a class="catalog__link" href="#">SALE</a>
-                <img class="catalog__img" src="./img/category/flamingo.png" width="248" height="248"
-                    alt="images of apparel kids category">
-            </li>
-            <li class="catalog__item catalog__adults">
-                <a class="catalog__link" href="#">APPAREL ADULTS</a>
-                <img class="catalog__img" src="./img/category/shirt.png" width="272" height="204"
-                    alt="images of apparel kids category">
-            </li>
-        </ul>
-        <div class="catalog__textblock">
+          <ul class="catalog__upperlist">
+          @@include('./blocks/slider__item.html', {
+            'img':"./img/category/sweater.png",
+            'link':"#",
+            'text':"APPAREL KIDS",
+            'class':"catalog__apparelCatalog",
+            })
+            @@include('./blocks/slider__item.html', {
+            'img':"./img/category/soxs.png",
+            'link':"#",
+            'text':"HOLIDAY SHOP",
+            'class':"catalog__holidayCatalog",
+            })
+            @@include('./blocks/slider__item.html', {
+            'img':"./img/category/deer.png",
+            'link':"./toys.html",
+            'text':"TOYS",
+            'class':"catalog__toysCatalog",
+            })
+            @@include('./blocks/slider__item.html', {
+            'img':"./img/category/eti.png",
+            'link':"#",
+            'text':"ACCESSORIES",
+            'class':"catalog__accesoriesCatalog"
+            })
+            @@include('./blocks/slider__item.html', {
+              'img':"./img/category/flamingo.png",
+              'link':"#",
+              'text':"SALE",
+              'class':"catalog__saleCatalog"
+              })
+            @@include('./blocks/slider__item.html', {
+                'img':"./img/category/shirt.png",
+                'link':"#",
+                'text':"APPAREL ADULTS",
+                'class':"catalog__adultsCatalog"
+                })
+          </ul>
+          <div class="catalog__textblock">
             <h2 class="catalog__title">Product Description</h2>
             <div class="catalog__discription-owerflow">
                 <p class="catalog__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and
@@ -76,8 +84,8 @@
                             water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll,
                             the
                             other for her young mistress.</p>
-            </div>
-        </div>
+          </div>
+      </div>
     </section>
     @@include('./blocks/footer.html')
     @@include('./blocks/mobile__menu.html')

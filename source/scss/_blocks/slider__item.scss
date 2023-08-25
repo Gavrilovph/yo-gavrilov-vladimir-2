@@ -1,4 +1,4 @@
-.slider{
+.catalog {
   &__img {
     position: absolute;
     &:hover{
@@ -7,12 +7,14 @@
     }
   }
   &__item {
-    margin: 0 10px;
     width: 280px;
     height: 270px;
     &>img {
       position: absolute;
+      max-height: 100%;
+      max-width: 100%;
     }
+    
   }
   &__link {
     position: relative;
@@ -43,16 +45,18 @@
     margin-left: 0;
     background-color: #DBE4DB;
     &>img {
-      margin-top: 46px;
+      margin-top: 15px;
       margin-left: 18px;
+      width: 100%;
     }
   }
   &__shop {
+    max-height: 100%;
     background-color: #EADDD3;
-    &>img {
-      margin-top: 13px;
-      margin-left: 36px;
-    }
+    // &>img {
+    //   // margin-top: 13px;
+    //   // margin-left: 5px;
+    // }
   }
   &__kids>a,
   &__shop>a {
@@ -68,20 +72,5 @@
       margin-top: 10px;
       margin-left: 20px;
     }
-  }
-  &__buttons{
-    display: flex;
-    margin-top: 31px;
-    &>button:hover {
-      cursor: pointer;
-    }
-  }
-  &__text {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    width: 580px;
-    margin-left: 20px;
-    line-height: 22px;
   }
 }

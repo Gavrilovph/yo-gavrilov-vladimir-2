@@ -10,6 +10,12 @@
       margin-bottom: 15px;
       text-transform: uppercase;
       font-size: 40px;
+      @media screen and ( max-width: 900px ) {
+        font-size: 36px;
+      }
+      @media screen and ( max-width: 480px ) {
+        font-size: 24px;
+      }
     }
     &__list {
       display: flex;
@@ -39,5 +45,14 @@
     }
     &__hidden{
       display: none;
+    }
+  }
+
+  .navCatalog {
+    max-width: 1178px;
+    margin: auto;
+
+    @media screen and ( max-width: 900px ) {
+      max-width: 670px;
     }
   }
