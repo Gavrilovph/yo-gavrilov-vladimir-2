@@ -22,11 +22,15 @@
     <!-- endbuild -->
   </head>
   <body>
-    @@include('./blocks/header.html')
+    @@include('./blocks/header.html',{
+        'mainClass':"headerBlog",
+    })
+    
     @@include('./blocks/crumps.html',{
         'title':"Blog",
         'text':"Blog",
         'class':"nav__hidden",
+        'mainClass':"navBlog",
     })
     <section class="articles container">
         <h2 class="articles__title">Articles</h2>

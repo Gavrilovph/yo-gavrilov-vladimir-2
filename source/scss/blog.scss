@@ -1,4 +1,12 @@
 .articles {
+  // @media screen and ( max-width: 800px ) {
+  //   margin: 0 auto;
+  //   max-width: 690px;
+  // }
+  // @media screen and ( max-width: 660px ) {
+  //   margin: 0 auto;
+  //   max-width: 335px;
+  // }
     &__title {
         opacity: 0;
         position: absolute;
@@ -10,6 +18,15 @@
         justify-content: space-between;
         margin: 0 auto 17px;
         list-style-type: none;
+        
+        @media screen and (max-width: 800px) {
+          justify-content: space-between;
+          max-width: 670px;
+        }
+        @media screen and ( max-width: 660px ) {
+          max-width: 375px;
+          justify-content: center;
+        }
     }
 
     &__lowRow {

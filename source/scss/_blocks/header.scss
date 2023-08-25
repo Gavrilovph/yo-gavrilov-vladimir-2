@@ -203,4 +203,13 @@
       max-width: 670px;
     }
   }
+
+  .headerBlog {
+    @media screen and ( max-width: 800px ) {
+      max-width: 690px;
+    }
+    @media screen and ( max-width: 660px ) {
+      max-width: 335px;
+    }
+  }
   

@@ -1215,6 +1215,18 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   margin: 0 auto 17px;
   list-style-type: none;
 }
+@media screen and (max-width: 800px) {
+  .articles__list {
+    justify-content: space-between;
+    max-width: 670px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .articles__list {
+    max-width: 375px;
+    justify-content: center;
+  }
+}
 .articles__lowRow {
   margin-top: 33px;
 }
@@ -2328,6 +2340,17 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .headerBlog {
+    max-width: 690px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .headerBlog {
+    max-width: 335px;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -2695,6 +2718,28 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   width: 380px;
   margin-bottom: 36px;
 }
+@media screen and (max-width: 800px) {
+  .articles__item {
+    max-width: 314px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .articles__item {
+    max-width: 335px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .articles__image {
+    max-width: 100%;
+    max-height: 182px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .articles__image {
+    max-width: 100%;
+    max-height: 194px;
+  }
+}
 .articles__link {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 24px;
@@ -2795,9 +2840,21 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 
 .pagination {
-  width: 1174px;
+  max-width: 1174px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .pagination {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 660px) {
+  .pagination {
+    max-width: 335px;
+  }
 }
 .pagination__list {
   list-style-type: none;
@@ -2812,6 +2869,11 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   font-weight: 700;
   font-size: 16px;
   color: #1E0606;
+}
+@media screen and (max-width: 400px) {
+  .pagination__item > a {
+    font-size: 14px;
+  }
 }
 .pagination__item:first-child > a {
   color: #C29974;
@@ -2943,6 +3005,21 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 @media screen and (max-width: 900px) {
   .navCatalog {
     max-width: 670px;
+  }
+}
+
+.navBlog {
+  max-width: 1178px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .navBlog {
+    max-width: 690px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .navBlog {
+    max-width: 335px;
   }
 }
 

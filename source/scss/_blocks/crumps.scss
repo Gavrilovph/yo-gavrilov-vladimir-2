@@ -56,3 +56,15 @@
       max-width: 670px;
     }
   }
+
+  .navBlog {
+    max-width: 1178px;
+    margin: auto;
+
+    @media screen and ( max-width: 800px ) {
+      max-width: 690px;
+    }
+    @media screen and ( max-width: 660px ) {
+      max-width: 335px;
+    }
+  }
