@@ -1,149 +1,169 @@
 .animation {
-    &__message {
-        &-woman {
-            position: absolute;
-            scale: 90%;
-            top: 43%;
-            left: 5%;
-            animation: woman 15s ease-in infinite;
-        }
-
-        @keyframes woman {
-
-            0%,
-            10% {
-                opacity: 0;
-            }
-
-            12%,
-            25% {
-                opacity: 100;
-            }
-
-            27% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        &-man {
-            position: absolute;
-            z-index: 5;
-            top: 35%;
-            left: 20%;
-            animation: man 15s ease-in infinite;
-        }
-
-        @keyframes man {
-
-            0%,
-            40% {
-                opacity: 0;
-            }
-
-            42%,
-            55% {
-                opacity: 100;
-            }
-
-            57% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        &-manSecond {
-            position: absolute;
-            top: 35%;
-            left: 20%;
-            animation: manSecond 15s ease-in infinite;
-        }
-
-        @keyframes manSecond {
-
-            0%,
-            88% {
-                opacity: 0;
-            }
-
-            90%,
-            97% {
-                opacity: 100;
-            }
-
-            99% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        &-driver {
-            position: absolute;
-            top: 40%;
-            left: 60%;
-            animation: driver 15s ease-in infinite;
-            z-index: 3;
-        }
-
-        @keyframes driver {
-
-            0% {
-                opacity: 0;
-            }
-
-            60% {
-                opacity: 0;
-            }
-
-            62%,
-            87% {
-                opacity: 100;
-            }
-
-            89% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        &-mantext {
-            font-family: 'Open Sans', Arial, sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            position: absolute;
-            top: 25%;
-            left: 23%;
-        }
-
-        &-drivertext {
-            font-family: 'Open Sans', Arial, sans-serif;
-            font-weight: 400;
-            font-size: 15px;
-            width: 130px;
-            position: absolute;
-            top: 4%;
-            left: 10%;
-        }
-
-        &-womantext {
-            font-family: 'Open Sans', Arial, sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            position: absolute;
-            top: 20%;
-            left: 15%;
-        }
+  &__message {
+    &-woman {
+      position: absolute;
+      scale: 90%;
+      top: 44%;
+      left: 6%;
+      animation: woman 15s ease-in infinite;
+      width: 12%;
+      & > img {
+        width: 100%;
+      }
     }
+
+    @keyframes woman {
+      0%,
+      10% {
+        opacity: 0;
+      }
+
+      12%,
+      25% {
+        opacity: 100;
+      }
+
+      27% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    &-man {
+      position: absolute;
+      z-index: 5;
+      top: 35%;
+      left: 20%;
+      animation: man 15s ease-in infinite;
+      width: 11%;
+      & > img {
+        width: 100%;
+      }
+      & > p {
+        width: 70%;
+      }
+    }
+
+    @keyframes man {
+      0%,
+      40% {
+        opacity: 0;
+      }
+
+      42%,
+      55% {
+        opacity: 100;
+      }
+
+      57% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    &-manSecond {
+      position: absolute;
+      top: 35%;
+      left: 20%;
+      animation: manSecond 15s ease-in infinite;
+      width: 11%;
+      & > img {
+        width: 100%;
+      }
+      & > p {
+        width: 70%;
+        left: 19%;
+      }
+    }
+
+    @keyframes manSecond {
+      0%,
+      88% {
+        opacity: 0;
+      }
+
+      90%,
+      97% {
+        opacity: 100;
+      }
+
+      99% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    &-driver {
+      position: absolute;
+      top: 40%;
+      left: 60%;
+      animation: driver 15s ease-in infinite;
+      z-index: 3;
+      width: 12%;
+      & > img {
+        width: 100%;
+      }
+    }
+
+    @keyframes driver {
+      0% {
+        opacity: 0;
+      }
+
+      60% {
+        opacity: 0;
+      }
+
+      62%,
+      87% {
+        opacity: 100;
+      }
+
+      89% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    &-mantext {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.2vw;
+      position: absolute;
+      top: 25%;
+      left: 23%;
+    }
+
+    &-drivertext {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.1vw;
+      width: 80%;
+      position: absolute;
+      top: 4%;
+      left: 10%;
+    }
+
+    &-womantext {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1.2vw;
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      width: 70%;
+    }
+  }
 }

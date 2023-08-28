@@ -1,132 +1,148 @@
 .catalog {
-    max-width: 1180px;
+  max-width: 1180px;
 
-    &__upperlist {
-        display: flex;
-        gap: 20px;
-        width: 100%;
-        list-style-type: none;
-        font-family: "Montserrat", Arial, sans-serif;
-        font-size: 26px;
-        font-weight: 700;
-        flex-wrap: wrap;
+  &__upperlist {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    list-style-type: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    flex-wrap: wrap;
 
-        @media screen and ( max-width: 900px ) {
-          max-width: 648px;
-          margin: 0 auto;
-          justify-content: space-between;
-        }
-
-        @media screen and ( max-width: 659px ) {
-          justify-content: center;
-        }
-        
-        &>li{
-          @media screen and ( max-width: 900px ) {
-            width: 200px;
-            height: 196px;
-          }
-          @media screen and ( max-width: 440px ) {
-            width: 159px;
-            height: 155px;
-          }
-        }
+    @media screen and (max-width: 1200px) {
+      max-width: 648px;
+      justify-content: space-between;
     }
-    &__item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+
+    & > li {
+      @media screen and (max-width: 1200px) {
+        width: 200px;
+        height: 196px;
+      }
+
+      @media screen and (max-width: 659px) {
         justify-content: center;
-        align-items: center;
-        width: 280px;
-        height: 270px;
-        box-sizing: border-box;
-        & > a {
-            max-width: 200px;
-            z-index: 1;
-            position: absolute;
-            text-align: center;
-            @media screen and ( max-width: 900px ) {
-              font-size: 24px;
-            }
-            @media screen and ( max-width: 440px ) {
-              font-size: 18px;
-            }
-        }
-    }
-    &__apparelCatalog {
-        background-color: #dbe4db;
-    }
-    &__holidayCatalog {
-        background-color: #eaddd3;
-    }
-    &__toysCatalog {
-        background-color: #f8f2da;
+      }
 
+      @media screen and (max-width: 460px) {
+        width: 155px;
+        height: 155px;
+      }
     }
-    &__accesoriesCatalog {
-        background-color: #d5d4e1;
-        margin-left: 200px;
-        @media screen and ( max-width: 1100px ) {
-        margin-left: 0;
-        }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 270px;
+    box-sizing: border-box;
+    & > a {
+      max-width: 200px;
+      z-index: 1;
+      position: absolute;
+      text-align: center;
     }
-    &__saleCatalog {
-        background-color: #f3d0db;
+  }
+  &__apparelCatalog {
+    background-color: #dbe4db;
+    & > a {
+      margin-top: -5%;
     }
-    &__adultsCatalog {
-        background-color: #e5eaf8;
+  }
+  &__holidayCatalog {
+    background-color: #eaddd3;
+    & > a {
+      margin-top: -5%;
+    }
+  }
+  &__toysCatalog {
+    background-color: #f8f2da;
+  }
+  &__accesoriesCatalog {
+    background-color: #d5d4e1;
+    margin-left: 200px;
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+  &__saleCatalog {
+    background-color: #f3d0db;
+  }
+  &__adultsCatalog {
+    background-color: #e5eaf8;
+    & > a {
+      margin-top: -6%;
+    }
+  }
+
+  &__apparelCatalog,
+  &__holidayCatalog,
+  &__toysCatalog,
+  &__accesoriesCatalog,
+  &__saleCatalog,
+  &__adultsCatalog {
+    @media screen and (max-width: 1200px) {
+      font-size: 24px;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media screen and (max-width: 900px) {
+      font-size: 36px;
     }
 
-    &__link {
-        color: #ffffff;
-        text-decoration: none;
-        &:hover,
-        &:active {
-            text-decoration: underline;
-        }
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
     }
-    &__img {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+  }
+  &__discription {
+    &-owerflow {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 26px;
     }
-    &__title {
-        font-family: "Montserrat", Arial, sans-serif;
-        font-size: 38px;
-        font-weight: 700;
-        text-transform: uppercase;
-        @media screen and ( max-width: 900px ) {
-          font-size: 36px;
-        }
+  }
+  &__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__textblock {
+    max-width: 680px;
+    margin: 56px auto 56px 17%;
 
-        @media screen and ( max-width: 480px ) {
-          font-size: 24px;
-        }
+    @media screen and (max-width: 900px) {
+      max-width: 648px;
+      margin: 56px 0;
     }
-    &__discription {
-        &-owerflow {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 15px;
-            margin-top: 26px;
-        }
-    }
-    &__text {
-        font-family: "Open Sans", Arial, sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-    }
-    &__textblock {
-        max-width: 680px;
-        margin: 56px auto 56px 17%;
-
-        @media screen and ( max-width: 900px ) {
-          max-width: 648px;
-          margin: 56px auto;
-        }
-    }
+  }
 }

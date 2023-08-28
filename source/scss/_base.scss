@@ -26,7 +26,7 @@ body {
 
 /* link styles */
 
-link:visited{
+link:visited {
   color: white;
 }
 
@@ -37,10 +37,10 @@ link:visited{
   outline: none;
   &:hover,
   &:active,
-  &:focus{
-    border-color: #C29974;
+  &:focus {
+    border-color: #c29974;
   }
   &:disabled {
-    border-color: #EBEBEB;
+    border-color: #ebebeb;
   }
 }

@@ -1,105 +1,96 @@
-
-.pagination{
-    max-width: 1174px;
-    width: 100%;
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__list {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
-    @media screen and ( max-width: 800px ) {
-      max-width: 690px;
-      margin: 0 auto;
+    max-width: 234px;
+    gap: 66px;
+  }
+  &__item {
+    & > a {
+      text-decoration: none;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #1e0606;
+      @media screen and (max-width: 400px) {
+        font-size: 14px;
+      }
     }
-    @media screen and ( max-width: 660px ) {
-      max-width: 335px;
+    &:first-child > a {
+      color: #c29974;
     }
-    &__list {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      max-width: 234px;
-      gap: 66px;
+    &:hover > a {
+      color: #aaaaaa;
+      transition: 0.3s;
     }
-    &__item {
-        &>a {
-        text-decoration: none;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        color: #1E0606;
-        @media screen and ( max-width: 400px ) {
-          font-size: 14px;
-        }
-        }
-        &:first-child>a {
-          color: #C29974;
-        }
-        &:hover>a {
-          color: #AAAAAA;
-          transition: 0.3s;
-        }
-    }
-    &__arrowleft {
+  }
+  &__arrowleft {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrow.svg);
+    opacity: 12%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-position: center;
+    margin-top: -6px;
+    margin-left: -1px;
+    &:hover {
       width: 20px;
       height: 30px;
-      background-image: url(../img/arrow.svg);
-      opacity: 12%;
+      background-image: url(../img/arrowhover.svg);
+      opacity: 100%;
       background-repeat: no-repeat;
       transform: rotate(180deg);
       background-position: center;
-      margin-top: -6px;
-      margin-left: -1px;
-      &:hover {
-        width: 20px;
-        height: 30px;
-        background-image: url(../img/arrowhover.svg);
-        opacity: 100%;
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-        background-position: center;
-        transition: 0.3s;
-      }
-      &:active {
-        width: 20px;
-        height: 30px;
-        background-image: url(../img/arrowhover.svg);
-        opacity: 70%;
-        background-repeat: no-repeat;
-        transform: rotate(180deg);
-        background-position: center;
-      }
+      transition: 0.3s;
     }
-    &__arrowRight {
+    &:active {
       width: 20px;
       height: 30px;
-      background-image: url(../img/arrow.svg);
-      opacity: 12%;
+      background-image: url(../img/arrowhover.svg);
+      opacity: 70%;
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
       background-position: center;
-      margin-top: -6px;
-      margin-right: -5px;
-      &:hover {
-        width: 20px;
-        height: 30px;
-        background-image: url(../img/arrowhover.svg);
-        opacity: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: 0.3s;
-      }
-      &:focus {
-        width: 20px;
-        height: 30px;
-        background-image: url(../img/arrowhover.svg);
-        opacity: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: 0.3s;
-      }
-      &:active {
-        width: 20px;
-        height: 30px;
-        background-image: url(../img/arrowhover.svg);
-        opacity: 70%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
     }
   }
+  &__arrowRight {
+    width: 20px;
+    height: 30px;
+    background-image: url(../img/arrow.svg);
+    opacity: 12%;
+    background-position: center;
+    margin-top: -6px;
+    margin-right: -5px;
+    &:hover {
+      width: 20px;
+      height: 30px;
+      background-image: url(../img/arrowhover.svg);
+      opacity: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.3s;
+    }
+    &:focus {
+      width: 20px;
+      height: 30px;
+      background-image: url(../img/arrowhover.svg);
+      opacity: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.3s;
+    }
+    &:active {
+      width: 20px;
+      height: 30px;
+      background-image: url(../img/arrowhover.svg);
+      opacity: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

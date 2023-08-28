@@ -1,220 +1,206 @@
-
 .footer {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0;
+  background-color: #434343;
+  padding-top: 100px;
+  &__blockorder {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    @media screen and (max-width: 963px) {
+      padding: 0 61px 0;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0;
+    }
+  }
+  &__topRow {
+    display: flex;
+    width: 1400px;
     justify-content: center;
-    margin: 60px auto 0;
-    background-color: #434343;
-    padding-top: 100px;
-    &__blockorder {
-      display: flex;
+    gap: 20px;
+    margin-top: 2px;
+    @media screen and (max-width: 661px) {
       flex-wrap: wrap;
-      justify-content: space-around;
-      width: 100%;
-      padding: 0 110px 0; /* отталкивает прилипание и линию нижнего ряда */
-      @media screen and ( max-width: 963px) {
-        padding: 0 61px 0;
-      }
-      @media screen and ( max-width: 500px) {
-        padding: 0;
-      }
     }
-    &__topRow {
-      display: flex;
-      width: 1400px;
+    @media screen and (max-width: 500px) {
       justify-content: center;
-      gap: 20px;
-      margin-top: 2px;
-      @media screen and ( max-width: 661px ) {
-        flex-wrap: wrap;
-      }
-      @media screen and ( max-width: 500px ) {
-        justify-content: center;
+    }
+  }
+
+  &__info,
+  &__connect {
+    &-text {
+      @media screen and (max-width: 661px) {
+        margin-top: 30px;
       }
     }
+  }
 
-    &__info,
-    &__connect {
-      &-text {
-        @media screen and ( max-width: 661px ) {
-          margin-top: 30px;
-        }
-      }
-    }
+  &__navigation,
+  &__info,
+  &__connect {
+    max-width: 380px;
+    width: 100%;
+    list-style-type: none;
+    height: auto;
 
-    &__navigation,
-    &__info,
-    &__connect{
-      max-width: 380px;
+    @media screen and (max-width: 500px) {
+      max-width: 90%;
       width: 100%;
-      list-style-type: none;
-      height: auto;
-
-      @media screen and ( max-width: 500px ) {
-        max-width: 90%;
-        width: 100%;
-      }
-      &-text {
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #AAAAAA;
-        margin-bottom: 25px;
-      }
-      &-col,
-      &-list,
-      &-form {
-        border-width: 1px 0px 0px 0px;
-        border-style: solid;
-        border-color: #666666;
-        padding-top: 28px;
-      }
-      &-form {
-        display: flex;
-        align-items: center;
-        padding-top: 24px;
-        &>input::placeholder {
-          color: #ffffff;
-        }
-        &-input {
-          font-family: 'Open Sans', Arial, sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          width: 100%;
-          height: 40px;
-          padding-left: 15px;
-          background-color: #666666;
-          color: #ffffff;
-          outline: none;
-          border: none;
-          &:hover,
-          &:active {
-            border-color: #ffffff;
-            outline: solid;
-            outline-width: 1px;
-          }
-        }
-        &-btn {
-          @include btn;
-          line-height: 22px;
-          padding: 10px 22px;
-        }
-      }
     }
-
-    &__socials {
-      margin-top: 25px;
-      &-list {
-        display: flex;
-        gap: 10px;
-      }
+    &-text {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #aaaaaa;
+      margin-bottom: 25px;
     }
-    &__link.facebook {
-      display: block;
-      background-image: url(../img/Facebook.svg);
-      background-size: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 30px;
-      width: 30px;
-    }
-    &__link.twitter {
-      display: block;
-      background-image: url(../img/Twitter.svg);
-      background-size: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 30px;
-      width: 30px;
-    }
-    &__link.pinterest {
-      display: block;
-      background-image: url(../img/Pinterest.svg);
-      background-size: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 30px;
-      width: 30px;
-    }
-    &__link.instagram {
-      display: block;
-      background-image: url(../img/Instagram.svg);
-      background-size: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 30px;
-      width: 30px;
-    }
-    &__lowerRow {
+    &-col,
+    &-list,
+    &-form {
       border-width: 1px 0px 0px 0px;
       border-style: solid;
       border-color: #666666;
-      padding-top: 26px;
-      margin-top: 27px;
+      padding-top: 28px;
+    }
+    &-form {
       display: flex;
-      max-width: 1180px;
-      width: 100%;
-      flex-wrap: wrap; /* Обернем элементы на маленьких экранах */
-      margin-bottom: 100px;
-
-      @media screen and ( max-width: 661px ) {
-        max-width: 376px;
+      align-items: center;
+      padding-top: 24px;
+      & > input::placeholder {
+        color: #ffffff;
       }
-
-      @media screen and ( max-width: 500px ) {
-        max-width: 90%;
-      }
-    }
-    & ul{ //обращение ко всем спискам в футере и их стилизация
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
-      list-style-type: none;
-      @media screen and ( max-width: 500px ) {
-        font-size: 14px;
-      }
-    }
-    /* добавил отступ всем кроме первого элемента списка ссылок */
-    &__col,
-    &__info{
-      &-list>*+*{
-        margin-top: 15px;
-        @media screen and (max-width: 661px){
-        margin-top: 0;
+      &-input {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        height: 40px;
+        padding-left: 15px;
+        background-color: #666666;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        &:hover,
+        &:active {
+          border-color: #ffffff;
+          outline: solid;
+          outline-width: 1px;
         }
       }
+      &-btn {
+        @include btn;
+        line-height: 22px;
+        padding: 10px 22px;
+      }
+    }
+  }
 
-      &-list{
-        @media screen and (max-width: 661px){
+  &__socials {
+    margin-top: 25px;
+    &-list {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__link.facebook {
+    display: block;
+    background-image: url(../img/Facebook.svg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+  }
+  &__link.twitter {
+    display: block;
+    background-image: url(../img/Twitter.svg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+  }
+  &__link.pinterest {
+    display: block;
+    background-image: url(../img/Pinterest.svg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+  }
+  &__link.instagram {
+    display: block;
+    background-image: url(../img/Instagram.svg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+  }
+  &__lowerRow {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: #666666;
+    padding-top: 26px;
+    margin-top: 27px;
+    display: flex;
+    max-width: 1180px;
+    width: 100%;
+    flex-wrap: wrap; /* Обернем элементы на маленьких экранах */
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 661px) {
+      max-width: 376px;
+    }
+
+    @media screen and (max-width: 500px) {
+      max-width: 90%;
+    }
+  }
+  & ul {
+    //обращение ко всем спискам в футере и их стилизация
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    list-style-type: none;
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+  /* добавил отступ всем кроме первого элемента списка ссылок */
+  &__col,
+  &__info {
+    &-list > * + * {
+      margin-top: 15px;
+      @media screen and (max-width: 661px) {
+        margin-top: 0;
+      }
+    }
+
+    &-list {
+      @media screen and (max-width: 661px) {
         gap: 10px;
         column-gap: 10px;
         display: flex;
         flex-direction: column;
         max-height: 115px;
         flex-wrap: wrap;
-        }
       }
     }
+  }
 
   &__navigation,
-  &__info{
+  &__info {
     &-link {
-        text-decoration: none;
-        color: #ffffff;
-        &>a:visited {
-          text-decoration: none;
-        }
-        &:hover {
-          transition: 0.3s;
-          opacity: 50%;
-        }
-        &:active {
-          opacity: 20%;
-        }
-      }
-    }
-    &__link{
-      &>a:visited {
+      text-decoration: none;
+      color: #ffffff;
+      & > a:visited {
         text-decoration: none;
       }
       &:hover {
@@ -225,122 +211,135 @@
         opacity: 20%;
       }
     }
-    & a {
+  }
+  &__link {
+    & > a:visited {
       text-decoration: none;
     }
-    &__raiting{
-      &-container {
-        max-width: 380px;
-        width: 380px;
-        display: flex;
-        gap: 25px;
-        color: #666666;
-        margin: 0 18px 20px 0;
-      }
+    &:hover {
+      transition: 0.3s;
+      opacity: 50%;
     }
-    &__copiright{
-      &-container {
-        max-width: 380px;
-        width: 380px;
-      }
-    }
-    &__text {
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      color: #FFFFFF;
-    }
-    &__design{
-      &-link {
-        display: block;
-        max-width: 380px;
-        // width: 380px;
-        width: 100%; /* Изменим ширину элемента на мобильных устройствах */
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #A2A2A2;
-        text-decoration: none;
-        @media screen and (max-width: 845px) {
-          width: 60%;
-        }
-        @media screen and ( max-width: 661px ) {
-          flex-basis: 100%;
-        }
-        &:hover,
-        &:active{
-          transition: 0.3s;
-          text-decoration: underline;
-          color: #FFFFFF;
-        }
-      }
-    }
-    &__wrapper{
-      display: flex;
-      gap: 20px;
-      justify-content: space-between;
-      max-width: 782px;
-      width: 100%;
-      @media screen and (max-width: 768px) {
-        max-width: 900px;
-      }
-      @media screen and ( max-width: 661px ) {
-        flex-wrap: wrap;
-      }
-    }
-    &__raiting {
-      position: relative;
-      font-size: 15px;
-      display: inline-block;
-      margin-left: 2px;
-      width: 100px;
-      &-items {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: row-reverse;
-        overflow: hidden;
-      }
-      &-text {
-        color: #C29974;
-        transition: none;
-      }
-    }
-    &__input {
-      position: absolute;
-      width: 0%;
-      height: 0%;
-      opacity: 0;
-      visibility: hidden;
-      top: 0;
-      left: 0;
-      &:checked,
-      &:checked~.footer__label {
-        color: #C29974;
-      }
-    }
-    &__label {
-      flex: 0 0 20%;
-      height: 100%;
-      cursor: pointer;
-      color: #ffffff;
-      &::before {
-        content: "★";
-        display: block;
-        transition: color 0.3s ease 0s;
-      }
-      &:hover,
-      &:hover~&,
-      &:checked~&:hover {
-        color: #836E5B;
-      }
-    }
-    /* warning!!! do not change this class! It's connected with JS */
-    &__colorHoverJs>p {
-    transition: 0.3s;
-    color: #C29974
+    &:active {
+      opacity: 20%;
     }
   }
+  & a {
+    text-decoration: none;
+  }
+  &__raiting {
+    &-container {
+      max-width: 380px;
+      width: 380px;
+      display: flex;
+      gap: 25px;
+      color: #666666;
+      margin: 0 18px 20px 0;
+    }
+  }
+  &__copiright {
+    &-container {
+      max-width: 380px;
+      width: 380px;
+    }
+  }
+  &__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  &__design {
+    &-link {
+      display: block;
+      max-width: 380px;
+      // width: 380px;
+      width: 100%; /* Изменим ширину элемента на мобильных устройствах */
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #a2a2a2;
+      text-decoration: none;
+      @media screen and (max-width: 845px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 661px) {
+        flex-basis: 100%;
+      }
+      &:hover,
+      &:active {
+        transition: 0.3s;
+        text-decoration: underline;
+        color: #ffffff;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 782px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 900px;
+    }
+    @media screen and (max-width: 661px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__raiting {
+    position: relative;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 2px;
+    width: 100px;
+    &-items {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
+    &-text {
+      color: #c29974;
+      transition: none;
+    }
+  }
+  &__input {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    &:checked,
+    &:checked ~ .footer__label {
+      color: #c29974;
+    }
+  }
+  &__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #ffffff;
+    &::before {
+      content: "★";
+      display: block;
+      transition: color 0.3s ease 0s;
+    }
+    &:hover,
+    &:hover ~ &,
+    &:checked ~ &:hover {
+      color: #836e5b;
+    }
+  }
+  /* warning!!! do not change this class! It's connected with JS */
+  &__colorHoverJs > p {
+    transition: 0.3s;
+    color: #c29974;
+  }
+}

@@ -1,31 +1,30 @@
-
 // Buttons conditions
 
-@mixin btn-hover{
+@mixin btn-hover {
   transition: 0.3s;
-  background-color: #C29974;
-  color: #FFFFFF;
+  background-color: #c29974;
+  color: #ffffff;
 }
 
-@mixin btn-active{
-  background-color: #CFAF91;
-  color: #FFFFFF;
+@mixin btn-active {
+  background-color: #cfaf91;
+  color: #ffffff;
 }
 
-@mixin btn-disabled{
-  background-color: #C7C1C1;
-  color: #FFFFFF;
+@mixin btn-disabled {
+  background-color: #c7c1c1;
+  color: #ffffff;
 }
 
 // Buttons visual
-@mixin btn{
-  font-family: 'Open Sans', Arial, sans-serif;
+@mixin btn {
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 11px 23px;
   text-align: center;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 0;
   text-decoration: none;
   text-transform: uppercase;
@@ -39,5 +38,3 @@
     @include btn-disabled;
   }
 }
-
-

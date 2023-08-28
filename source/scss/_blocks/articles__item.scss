@@ -1,55 +1,57 @@
 .articles {
-    &__item {
-        width: 380px;
-        margin-bottom: 36px;
+  &__item {
+    width: 380px;
+    margin-bottom: 36px;
 
-      @media screen and (max-width: 800px) {
-        max-width: 314px;
-      }
-      @media screen and (max-width: 660px) {
-        max-width: 335px;
-      }
+    @media screen and (max-width: 900px) {
+      max-width: 314px;
     }
+    @media screen and (max-width: 770px) {
+      max-width: 335px;
+    }
+    @media screen and (max-width: 660px) {
+      margin-top: -30px;
+    }
+  }
 
-    &__image{
-      @media screen and (max-width: 800px) {
-        max-width: 100%;
-        max-height: 182px;
-      }
-      @media screen and (max-width: 660px) {
-        max-width: 100%;
-        max-height: 194px;
-      }
+  &__image {
+    @media screen and (max-width: 900px) {
+      max-width: 100%;
+      max-height: 182px;
     }
+    @media screen and (max-width: 770px) {
+      max-width: 100%;
+      max-height: 194px;
+    }
+  }
 
-    &__link {
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 31px;
-        text-decoration: none;
-        color: #000000;
-        padding-top: 10px;
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
+  &__link {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 10px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
-    &__descripton {
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        margin-top: 15px;
-    }
-    &__date {
-        font-family: 'Open Sans', Arial, sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        color: #818181;
-        margin-top: 17px;
-        margin-bottom: 7px;
-    }
+  }
+  &__descripton {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+  &__date {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #818181;
+    margin-top: 17px;
+    margin-bottom: 7px;
+  }
 }
-

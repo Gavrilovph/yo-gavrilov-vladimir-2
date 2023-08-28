@@ -1,307 +1,322 @@
-.wrapper{
-    position: relative;
-    display: flex;
-}
-
 .svg {
-    margin-left: -20px;
-    padding-bottom: 60px;
-    &__roof{
-        transform:translate(0,-47px);
-        animation: roof 20s ease-in-out infinite;
+  margin-left: -20px;
+  padding-bottom: 60px;
+  position: relative;
+  @media screen and (max-width: 460px) {
+    max-width: 418px;
+    width: 100%;
+    margin: 0;
+  }
+  & > svg {
+    @media screen and (max-width: 460px) {
+      max-width: 418px;
+      width: 100%;
     }
-    @keyframes roof {
-        0%{
-            transform:translate(0,-47px);
-            opacity: 0;
-        }
-        5%{
-            transform:translate(0,0px);
-            opacity: 30%;
-        }
-        10%{
-            opacity: 100%;
-        }
-        100%{
-            transform:translate(0,0px);
-            opacity: 100%;
-        }
-    }
-    &__left{
-        &-rect{
-            transform:translate(-250px,0);
-            animation: leftrect 20s ease-in-out infinite;
-        }
-        @keyframes leftrect {
-            0%{
-                transform:translate(-250px,0);
-                opacity: 0;
-            }
-            5%{
-                transform:translate(0,0);
-                opacity: 30%;
-            }
-            10%{
-                opacity: 100%;
-            }
-            100%{
-                transform:translate(0,0);
-                opacity: 100%;
-            }
-        }
-        &-one {
-            animation: one 10s ease-in-out infinite;
-        }
-        @keyframes one {
-            50%{
-                stroke-width: 1%;
-                transform:translate(30px,0);
-            }
-        }
-        &-two {
-            animation: two 10s 2s ease-in-out infinite;
-        }
-        @keyframes two {
-            50%{
-                stroke-width: 1%;
-                transform:translate(10px,0);
-            }
-        }
-        &-three {
-            animation: three 10s 5s ease-in-out infinite;
-        }
-        @keyframes three {
-            50%{
-                stroke-width: 1%;
-                transform:translate(30px,0);
-            }
-        }
-        &-four {
-            animation: four 10s 2s ease-in-out infinite;
-        }
-        @keyframes four {
-            50%{
-                stroke-width: 1%;
-                transform:translate(-30px,0);
-            }
-        }
-        &-five {
-            animation: five 10s ease-in-out infinite;
-        }
-        @keyframes five {
-            50%{
-                fill: rgb(250, 177, 248);
-            }
-        }
-        &-six {
-            animation: six 10s ease-in-out infinite;
-        }
-        @keyframes six {
-            50%{
-                fill: burlywood;
-            }
-        }
-        &-seven {
-            animation: seven 10s ease-in-out infinite;
-        }
-        @keyframes seven {
-            50%{
-                stroke-width: 1%;
-                transform:translate(-30px,0);
-            }
-        }
-        &-eight {
-            animation: eight 10s ease-in-out infinite;
-        }
-        @keyframes eight {
-            50%{
-                stroke-width: 0.5%;
-                transform:translate(15px,0);
-            }
-        }
-        &-nine {
-            animation: nine 10s ease-in-out infinite;
-        }
-        @keyframes nine {
-            50%{
-                fill: rgb(95, 226, 43);
-            }
-        }
-        &-ten {
-            animation: ten 10s ease-in-out infinite;
-        }
-        @keyframes ten {
-            50%{
-                fill: rgb(226, 211, 43);
-            }
-        }
-        &-eleven {
-            animation: eleven 10s ease-in-out infinite;
-        }
-        @keyframes eleven {
-            50%{
-                stroke-width: 1%;
-                transform:translate(-20px,0);
-            }
-        }
-        &-twelve {
-            animation: twelve 10s 1s ease-in-out infinite;
-        }
-        @keyframes twelve {
-            50%{
-                stroke-width: 1%;
-                transform:translate(-30px,0);
-            }
-        }
-        &-thirteen {
-            animation: thirteen 10s ease-in-out infinite;
-        }
-        @keyframes thirteen {
-            50%{
-                stroke-width: 5%;
-                stroke: #f5f9d0;
-                transform:translate(-7px,0);
-            }
-        }
-     }
+  }
 
-    &__right{
-        &-rect{
-            transform:translate(250px,0);
-            animation: rightrect 20s ease-in-out infinite;
-        }
-        @keyframes rightrect {
-            0%{
-                transform:translate(250px,0);
-                opacity: 0;
-            }
-            5%{
-                transform:translate(0,0);
-                opacity: 30%;
-            }
-            10%{
-                opacity: 100%;
-            }
-            100%{
-                transform:translate(0,0);
-                opacity: 100%;
-            }
-        }
-    }
-
-    &__daynight{
-        fill: #D0E2F9;
-        animation: daynightbg 10s ease-in-out infinite;
-    }
-    @keyframes daynightbg {
-        0%{
-            fill: #D0E2F9;
-        }
-        50%{
-            fill: #1079FF;
-        }
-        100%{
-            fill: #D0E2F9;
-        }
-    }
-    &__sun{
-        animation: sun 10s ease-in-out infinite;
-    }
-    @keyframes sun {
-        50%{
-            fill: #D0E2F9;
-            transform:translate(100px,0);
-        }
-    }
-    &__lowline{
-        animation: rightlowline 10s ease-in-out infinite;
-    }
-    @keyframes rightlowline {
-        50%{
-            stroke-width: 2%;
-        }
-    }
-    &__uppermountain{
-        animation: rightuppermountain 10s ease-in-out infinite;
-    }
-    @keyframes rightuppermountain {
-        50%{
-            transform: rotateY(-30deg);
-        }
-    }
-    &__upperbg{
-        animation: rightupperbg 10s ease-in-out infinite;
-    }
-    @keyframes rightupperbg {
-        50%{
-            fill: #ff8810;
-        }
-    }
-}
-
-.secret{
-    position: relative;
-    // overflow: hidden;
-    &__span{
-        position: absolute;
-        height: 50px;
-        width: 50px;
-        top: -139px;
-        left: -130px;
-        &:hover~.star{
-            animation: star 5s ease-in-out infinite;
-        }
-        @keyframes star {
-            0%{
-                opacity: 0%;
-            }
-            15%{
-                opacity: 100%;
-            }
-            10%, 30%{
-                left: 250px;
-                top: 150px;
-                scale: 350%;
-            }
-            40%,60%{
-                opacity: 100%;
-                left: 250px;
-                top: 150px;
-                scale: 550%;
-                transform: rotate(0);
-            }
-            99%{
-                opacity: 100%;
-                left: 250px;
-                top: 150px;
-                scale: 750%;
-                transform: rotate(10deg);
-            }
-            100%{
-                opacity: 0%;
-                scale: 100%;
-            }
-        }
-    }
-}
-
-.star{
-    opacity: 0;
+  &__homeworkstars {
     position: absolute;
-    left: 250px;
-    top: 150px;
-    scale: 60%;
-}
-
-
-
-.homeworkstars{
-    position: absolute;
-    scale: 50%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding: 0 0 30px 0;
-    top: -50px;
-    left: -140px;
+    top: -25px;
+    left: 15px;
+  }
+
+  &__roof {
+    transform: translate(0, -47px);
+    animation: roof 20s ease-in-out infinite;
+  }
+  @keyframes roof {
+    0% {
+      transform: translate(0, -47px);
+      opacity: 0;
+    }
+    5% {
+      transform: translate(0, 0px);
+      opacity: 30%;
+    }
+    10% {
+      opacity: 100%;
+    }
+    100% {
+      transform: translate(0, 0px);
+      opacity: 100%;
+    }
+  }
+  &__left {
+    &-rect {
+      transform: translate(-250px, 0);
+      animation: leftrect 20s ease-in-out infinite;
+    }
+    @keyframes leftrect {
+      0% {
+        transform: translate(-250px, 0);
+        opacity: 0;
+      }
+      5% {
+        transform: translate(0, 0);
+        opacity: 30%;
+      }
+      10% {
+        opacity: 100%;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+      }
+    }
+    &-one {
+      animation: one 10s ease-in-out infinite;
+    }
+    @keyframes one {
+      50% {
+        stroke-width: 1%;
+        transform: translate(30px, 0);
+      }
+    }
+    &-two {
+      animation: two 10s 2s ease-in-out infinite;
+    }
+    @keyframes two {
+      50% {
+        stroke-width: 1%;
+        transform: translate(10px, 0);
+      }
+    }
+    &-three {
+      animation: three 10s 5s ease-in-out infinite;
+    }
+    @keyframes three {
+      50% {
+        stroke-width: 1%;
+        transform: translate(30px, 0);
+      }
+    }
+    &-four {
+      animation: four 10s 2s ease-in-out infinite;
+    }
+    @keyframes four {
+      50% {
+        stroke-width: 1%;
+        transform: translate(-30px, 0);
+      }
+    }
+    &-five {
+      animation: five 10s ease-in-out infinite;
+    }
+    @keyframes five {
+      50% {
+        fill: rgb(250, 177, 248);
+      }
+    }
+    &-six {
+      animation: six 10s ease-in-out infinite;
+    }
+    @keyframes six {
+      50% {
+        fill: burlywood;
+      }
+    }
+    &-seven {
+      animation: seven 10s ease-in-out infinite;
+    }
+    @keyframes seven {
+      50% {
+        stroke-width: 1%;
+        transform: translate(-30px, 0);
+      }
+    }
+    &-eight {
+      animation: eight 10s ease-in-out infinite;
+    }
+    @keyframes eight {
+      50% {
+        stroke-width: 0.5%;
+        transform: translate(15px, 0);
+      }
+    }
+    &-nine {
+      animation: nine 10s ease-in-out infinite;
+    }
+    @keyframes nine {
+      50% {
+        fill: rgb(95, 226, 43);
+      }
+    }
+    &-ten {
+      animation: ten 10s ease-in-out infinite;
+    }
+    @keyframes ten {
+      50% {
+        fill: rgb(226, 211, 43);
+      }
+    }
+    &-eleven {
+      animation: eleven 10s ease-in-out infinite;
+    }
+    @keyframes eleven {
+      50% {
+        stroke-width: 1%;
+        transform: translate(-20px, 0);
+      }
+    }
+    &-twelve {
+      animation: twelve 10s 1s ease-in-out infinite;
+    }
+    @keyframes twelve {
+      50% {
+        stroke-width: 1%;
+        transform: translate(-30px, 0);
+      }
+    }
+    &-thirteen {
+      animation: thirteen 10s ease-in-out infinite;
+    }
+    @keyframes thirteen {
+      50% {
+        stroke-width: 5%;
+        stroke: #f5f9d0;
+        transform: translate(-7px, 0);
+      }
+    }
+  }
+
+  &__right {
+    &-rect {
+      transform: translate(250px, 0);
+      animation: rightrect 20s ease-in-out infinite;
+    }
+    @keyframes rightrect {
+      0% {
+        transform: translate(250px, 0);
+        opacity: 0;
+      }
+      5% {
+        transform: translate(0, 0);
+        opacity: 30%;
+      }
+      10% {
+        opacity: 100%;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__daynight {
+    fill: #d0e2f9;
+    animation: daynightbg 10s ease-in-out infinite;
+  }
+  @keyframes daynightbg {
+    0% {
+      fill: #d0e2f9;
+    }
+    50% {
+      fill: #1079ff;
+    }
+    100% {
+      fill: #d0e2f9;
+    }
+  }
+  &__sun {
+    animation: sun 10s ease-in-out infinite;
+  }
+  @keyframes sun {
+    50% {
+      fill: #d0e2f9;
+      transform: translate(100px, 0);
+    }
+  }
+  &__lowline {
+    animation: rightlowline 10s ease-in-out infinite;
+  }
+  @keyframes rightlowline {
+    50% {
+      stroke-width: 2%;
+    }
+  }
+  &__uppermountain {
+    animation: rightuppermountain 10s ease-in-out infinite;
+  }
+  @keyframes rightuppermountain {
+    50% {
+      transform: rotateY(-30deg);
+    }
+  }
+  &__upperbg {
+    animation: rightupperbg 10s ease-in-out infinite;
+  }
+  @keyframes rightupperbg {
+    50% {
+      fill: #ff8810;
+    }
+  }
+}
+
+.secret {
+  position: relative;
+  overflow: hidden;
+  &__span {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -590px;
+    left: 305px;
+    &:hover ~ .star {
+      animation: star 5s ease-in-out infinite;
+    }
+    @keyframes star {
+      0% {
+        opacity: 0%;
+      }
+      15% {
+        opacity: 100%;
+      }
+      10%,
+      30% {
+        left: 250px;
+        top: 150px;
+        scale: 350%;
+      }
+      40%,
+      60% {
+        opacity: 100%;
+        left: 250px;
+        top: 150px;
+        scale: 550%;
+        transform: rotate(0);
+      }
+      99% {
+        opacity: 100%;
+        left: 250px;
+        top: 150px;
+        scale: 750%;
+        transform: rotate(10deg);
+      }
+      100% {
+        opacity: 0%;
+        scale: 100%;
+      }
+    }
+  }
+}
+
+.star {
+  opacity: 0;
+  position: absolute;
+  left: 250px;
+  top: 150px;
+  scale: 60%;
+}
+
+.homeworkstars {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 268px;
+  left: 15px;
+  & > svg {
+  }
 }

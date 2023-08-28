@@ -22,15 +22,11 @@
     <!-- endbuild -->
   </head>
   <body>
-    @@include('./blocks/header.html',{
-      'mainClass':"headerCatalog",
-    })
-
+    @@include('./blocks/header.html')
     @@include('./blocks/crumps.html',{
         'title':"Category products",
         'text':"Catalog",
         'class':"nav__hidden",
-        'mainClass':"navCatalog", 
     })
     <section class="catalog container">
           <ul class="catalog__upperlist">
