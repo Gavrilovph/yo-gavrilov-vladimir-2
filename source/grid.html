@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>GRID</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <link rel="stylesheet" href="css/style.min.css?v=1693305897917">
+    </head>
+    <body>
+      @@include('./blocks/header.html')
+      @@include('./blocks/crumps.html',{
+        'title':"GRID",
+        'text':"Grid",
+        'class':"nav__hidden",
+      })
+      <div class="grid">
+        <div class="grid__block1">
+          <div class="grid__block1-leftColumn">
+            <p class="grid__block1-text1">IPHONE 6S</p>
+            <p class="grid__block1-text2">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+            <a class="grid__block1-link" href="#">Learn more or visit an Apple Store today</a>
+          </div>
+          <img class="grid__block1-img" src="./img/grid__blockOne-img.png" alt="image of a phone">
+        </div>
+        <div class="grid__block2">
+          <div class="grid__block2-wrapper">
+            <a class="grid__block2-link1" href="#">LEARN MORE</a>
+            <p class="grid__block2-text">How to Use Rotary Evaporator in Chemical Labs</p>
+            <a class="grid__block2-link2" href="#">Download now</a>
+          </div>
+        </div>
+        <div class="grid__block3">
+          <img class="grid__block3-img" src="./img/grid__blockThree-img.png" alt="image of a keyboard">
+          <p class="grid__block3-text">Our Brand New Keyboard</p>
+          <a class="grid__block3-link" href="#">LEARN ›</a>
+        </div>
+        <div class="grid__block4">
+          <div class="grid__block4-leftColumn">
+            <p class="grid__block4-text1">IMAC.RETINA</p>
+            <p class="grid__block4-text2">Hardly a month passes these days where</p>
+            <img class="grid__block4-img" src="./img/grid__blockFour-img.png" alt="image of a computer">
+          </div>
+          <div class="grid__block4-rightColumn">
+            <p class="grid__block4-text3">Apple may be experimenting in the virtual reality space. The company has been granted a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+            <a class="grid__block4-link" href="#">DOWNLOAD NOW ›</a>
+          </div>
+        </div>
+        <div class="grid__block5">
+          <div class="grid__block5-circle">
+            <p class="grid__block5-text1">POPULAR</p>
+            <img class="grid__block5-img" src="./img/grid__blockFive-img.png" alt="image of a floppy disc">
+            <p class="grid__block5-text2">MEET</p>
+          </div>
+          <p class="grid__block5-text3">iCloud</p>
+          <p class="grid__block5-text4">With iCloud, you always have the latest versions of your most important things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+          <a class="grid__block5-link" href="#">LEARN MORE</a>
+        </div>
+        <div class="grid__block6">
+          <p class="grid__block6-text">Much MuchBetter Experience</p>
+          <img class="grid__block6-img" src="./img/grid__blockSix-img.png" alt="image of a laptop">
+        </div>
+        <div class="grid__block7">
+          <img class="grid__block7-img" src="./img/grid__blockSeven-img.png" alt="image of a controller">
+          <p class="grid__block7-text">Games our pasion</p>
+          <a class="grid__block7-link" href="#">LEARN ›</a>
+        </div>
+        <div class="grid__block8">
+          <img class="grid__block8-img" src="./img/grid__blockEight-icon.svg" alt="an instagram icon">
+          <a class="grid__block8-link" href="#">Follow me ›</a>
+        </div>
+        <div class="grid__block9">
+          <img class="grid__block9-img" src="./img/grid__blockNine-img.png" alt="image of a tv">
+          <p class="grid__block9-text">More than just a display,  it’s a vision</p>
+        </div>
+      </div>
+      @@include('./blocks/footer.html')
+      @@include('./blocks/mobile__menu.html')
+      <script src="js/mobile-menu.js"></script>
+      <script src="/js/raitingmin.js"></script>
+      <script src="js/app.js" defer></script>
+    </body>
+</html>
