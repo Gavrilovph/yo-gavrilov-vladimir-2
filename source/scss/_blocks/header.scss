@@ -1,8 +1,7 @@
 .header {
-  z-index: 3;
+  position: relative;
   display: flex;
   align-items: center;
-  // max-width: 1178px;
   margin: 50px auto 62px;
   justify-content: space-between;
 
@@ -51,6 +50,7 @@
   &__leftblock {
     display: flex;
     align-items: center;
+    z-index: 7; //covering the mobile menu
   }
   &__link {
     &-index {
@@ -129,6 +129,7 @@
       display: flex;
       align-items: center;
       font-size: 14px;
+      z-index: 7; //covering the mobile menu
     }
     &-item {
       margin: 11px;
