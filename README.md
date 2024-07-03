@@ -9,7 +9,7 @@
 <br>Работа с гридами (page Grid)
 </div>
 
-Use npm
+<br>Use npm
 `npm install`
 
 Starting server:
